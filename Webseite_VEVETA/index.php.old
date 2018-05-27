@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="mainStylesheet.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<title>Maturaprojekt</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body data-spy="scroll" data-target=".navbar" data-offset="50" id="maturaprojekt">
+		<!-- Navigation Bar an Top gebunden -->
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+	  		<div class="container-fluid">
+	    		<div class="navbar-header">
+	      			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span> 
+	      			</button>
+	      			<a class="navbar-brand" href="index.html">Maturaprojekt</a>
+	    		</div>
+	    		<div class="collapse navbar-collapse" id="myNavbar">
+	      			<ul class="nav navbar-nav">
+				        <li class="active"><a href="#">Home</a></li>
+				        <li><a href="#about">About</a></li>
+				        <li><a href="#someInformation">Some Information</a></li>
+				        <li><a href="#timeline">Timeline</a></li>
+				        <li><a href="#stats">Stats</a></li>
+				        <li><a href="#contact">Contact</a></li> 
+	      			</ul>
+	      			<?php
+	      				session_start('Maturaprojekt');
+	      				echo '<ul class="nav navbar-nav navbar-right">';
+	      					if (isset($_SESSION['aktiv'])) {
+	      						echo '<li><a href="old-page.php"><span class="glyphicon glyphicon-bookmark"></span> Old Page</a></li>';
+				        		echo '<li><a href="login.htm"><span class="glyphicon glyphicon-log-in"></span> Monitoring</a></li>';
+				        		echo '<li><a href="login.htm"><span class="glyphicon glyphicon-log-in"></span> Logfiles</a></li>';
+				        		echo '<li><a href="login.htm"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>';
+	      					}else{
+	      						echo '<li><a href="old-page.php"><span class="glyphicon glyphicon-bookmark"></span> Old Page</a></li>';
+				        		echo '<li><a href="login.htm"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>';
+	      					}
+	      					
+	      				echo '</ul>';
+	      			?>
+	    		</div>
+	  		</div>
+		</nav>
+		<!--About-->
+		<div class="container-fluid text-center" id="about">
+			<h2>About</h2>
+			<i>Coming soon...</i>
+		</div>
+
+		<!--Some Information-->
+		<div class="container-fluid background-black text-center" id="someInformation">
+			<h2>Some Information</h2>
+			<i>Coming soon...</i>
+		</div>
+
+		<!--Timeline-->
+		<div class="container-fluid text-center" id="timeline">
+			<h2>Timeline</h2>
+			<i>Coming soon...</i>
+		</div>
+
+		<!--Stats-->
+		<div class="container-fluid background-black text-center" id="stats">
+			<h2>Stats</h2>
+			<?php
+				echo "<p>Aktuell (" . date("l jS \of F Y h:i:s A") . ") wurden <br>";
+				$path = "/home/thomas/Schreibtisch/logfiles.log";
+				$lines = 0;
+                $handle = @fopen($path, "r");
+                if ($handle) {
+                        while (($line = fgets($handle)) !== false) {
+                                $lines++;
+                        }
+
+                        fclose($handle);
+                }
+                echo $lines;
+				echo "<br>Logeinträge registriert.</p>";
+			?>
+		</div>
+
+		<!--Contact-->
+		<div class="container-fluid text-center" id="contact">
+			<h2>Contact</h2>
+			<i>Coming soon...</i>
+		</div>
+		<!--Footer-->
+		<footer class="container-fluid background-black text-center">
+			<br>
+			<a class="up-arrow" href="#maturaprojekt" data-toggle="tooltip" title="" data-original-title="TO TOP">
+                             <span class="glyphicon glyphicon-chevron-up"></span>
+  			</a>
+  			<br><br>
+  			<p>Webpage for my Maturaprojekt 2017/18 - Page is under construction - <a href="old-page.php"> To the old page</a></p>
+		</footer>
+	</body>
+</html>
