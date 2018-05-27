@@ -1,0 +1,178 @@
+%Vorlage aus https://www.mlte.de/latex/latex-talk/ und https://www.mlte.de/downloads/latex/final.tex
+\documentclass[listof=totoc, bibliography=totoc]{scrartcl}
+
+% input encoding
+\usepackage[utf8]{inputenc}
+
+% new german spelling
+\usepackage[english, ngerman]{babel}
+
+% choose font
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+% KOMA-Script options
+\KOMAoptions{%
+	parskip=full,%
+	fontsize=12pt,
+	DIV=calc}
+
+% color and images
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{tabularx}
+
+% quotes
+\usepackage[autostyle=true,english=british,german=guillemets]{csquotes}
+
+% math
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{nicefrac}
+
+%Float (Bilder fixieren etc.)
+\usepackage{float}
+
+%Euro-Zeichen
+\usepackage[official]{eurosym}
+
+%Code-Snippets
+\usepackage{listings}
+%Formatierung fuer PHP-Code
+\definecolor{dkgreen}{rgb}{0,.6,0}
+\definecolor{dkblue}{rgb}{0,0,.6}
+\definecolor{dkyellow}{cmyk}{0,0,.8,.3}
+
+\lstset{
+	language        = php,
+	basicstyle      = \small\ttfamily,
+	breaklines		= true,
+	postbreak		= \mbox{\textcolor{red}{$\hookrightarrow$}\space},
+	keywordstyle    = \color{dkblue},
+	stringstyle     = \color{red},
+	identifierstyle = \color{dkgreen},
+	commentstyle    = \color{gray},
+	emph            =[1]{php},
+	emphstyle       =[1]\color{black},
+	emph            =[2]{if,and,or,else},
+	emphstyle       =[2]\color{dkyellow},
+}
+
+
+% set special behaviour for hyperlinks in pdfs, Autor, Links nicht einrahmen
+\usepackage[
+	breaklinks=true, 
+	pdfauthor={Thomas Depian},
+	pdftitle={TITEL},
+	pdfkeywords={webcrawler, webspider, bots, tarpit},
+	hidelinks
+]{hyperref}
+
+
+%Wahrscheinlichkeitsbaum
+\usepackage{tikz}
+\usetikzlibrary{trees}
+% Set the overall layout of the tree
+\tikzstyle{level 1}=[level distance=3.5cm, sibling distance=5cm]
+\tikzstyle{level 2}=[level distance=3.5cm, sibling distance=4cm]
+\tikzstyle{level 3}=[level distance=3.5cm, sibling distance=3cm]
+
+% Define styles for bags and leafs
+\tikzstyle{bag} = [text width=4em, text centered]
+\tikzstyle{end} = [circle, minimum width=3pt,fill, inner sep=0pt]
+
+
+
+
+%Literaturverzeichnis
+\usepackage[style=ieee,babel=hyphen]{biblatex}
+%\usepackage[backend=biber,style=apa]{biblatex}
+%\usepackage[backend=biber, style=alphabetic, citestyle=authoryear]{biblatex}
+\bibliography{literaturverzeichnis}
+%\addbibresource{literaturverzeichnis.bib}
+
+
+\begin{document}
+	
+	%---DECKBLATT---
+	\input{01_deckblatt}
+	\setcounter{page}{1}
+	\pagenumbering{roman}
+	%---ABSTRACT---
+	\include{02_abstract}
+	
+	%---Inhaltsverzeichnis---
+	\tableofcontents
+	\newpage
+	\setcounter{page}{1}
+	\pagenumbering{arabic}
+	%---Einführung und persönliche Intention---
+	\section{Einführung}
+	\input{03-1_motivation}
+	\input{03-2_aufbau}
+	%###########################################
+	%---Einleitung---
+	\section{Einleitung}
+	%---Webcrawler---
+	\subsection{Webcrawler}
+	%---Definition---
+	\input{04_webcrawler-definition}
+	%---Funktionsweise---
+	\input{05_webcrawler-funktionsweise}
+	%---Interaktion---
+	\input{06_webcrawler-interaktion}
+	%---GoogleBot---
+	\input{07_webcrawler-googlebot}
+	%--------------------------------
+	%---Tarpiting---
+	\subsection{Tarpitting}
+	%---Definition---
+	\input{08_tarpitting-definition}
+	%---Formen---
+	\input{09_tarpitting-formen}
+	%---HTTP---
+	\input{10_tarpitting-http}
+	%##########################################
+	%---Hauptteil---
+	\section{Hauptteil}
+	%---Ziel---
+	\subsection{Ziel des Projektes}
+	\input{11_ziel}
+	%---Umsetzung---
+	%TODO: BESSEREN NAMEN
+	\subsection{Umsetzung}
+	%---Grundlegendes---
+	\input{12_umsetzung-grundlegendes}
+	%---Hyperlink-Tarpit---
+	\input{13_umsetzung-hyperlink}
+	%---Harvester-Tarpit---
+	\input{14_umsetzung-harvester}
+	%---Brute-Force-Tarpit---
+	\input{15_umsetzung-brute-force}
+	%---Auswertung---
+	\subsection{Auswertung}
+	%---Hyperlink-Tarpit---
+	\input{16_auswertung-hyperlink}
+	%---Harvester-Tarpit---
+	\input{17_auswertung-harvester}
+	%---Brute-Force-Tarpit---
+	\input{18_auswertung-brute-force}
+	%##########################################
+	%---Schlussteil---
+	\section{Schlussteil}
+	%---Zusammenfassung der Ergebnisse---
+	\subsection{Zusammenfassung der Ergebnisse}
+	\input{19_zusammenfassung}
+	%---Ausblick---
+	\subsection{Ausblick}
+	\input{20_ausblick}
+	\newpage
+	\setcounter{page}{1}
+	\pagenumbering{roman}
+	\printbibliography
+	\listoffigures
+	\listoftables
+	\addsec{Weiterführende Links}
+	\addsec{Anhänge}
+\end{document}
+

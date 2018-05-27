@@ -1,0 +1,73 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {ngerman}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\nonumberline Abstract}{ii}{section*.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Einf\IeC {\"u}hrung}{1}{section.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1}Motivation}{1}{subsection.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2}Aufbau}{1}{subsection.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Einleitung}{2}{section.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1}Webcrawler}{2}{subsection.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.1.1}Definition}{2}{subsubsection.2.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.1.2}Funktionsweise}{3}{subsubsection.2.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.1.3}Interaktionsm\IeC {\"o}glichkeiten}{7}{subsubsection.2.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.1.4}GoogleBot}{8}{subsubsection.2.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2}Tarpitting}{9}{subsection.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.1}Definition}{9}{subsubsection.2.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.2}Formen}{10}{subsubsection.2.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.3}HTTP-Tarpit}{10}{subsubsection.2.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Hauptteil}{11}{section.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1}Ziel des Projektes}{11}{subsection.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2}Umsetzung}{12}{subsection.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.1}Allgemein}{12}{subsubsection.3.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.2}Hyperlink-Tarpit}{13}{subsubsection.3.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.3}Harvester-Tarpit}{17}{subsubsection.3.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Generieren einer E-Mail-Adresse anhand der IP-Adresse}{17}{section*.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Generieren verschiedener E-Mail-Adressen}{18}{section*.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.4}Brute-Force-Tarpit}{19}{subsubsection.3.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3}Auswertung}{21}{subsection.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.1}Hyperlink-Tarpit}{21}{subsubsection.3.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.2}Harvester-Tarpit}{23}{subsubsection.3.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.3}Brute-Force-Tarpit}{24}{subsubsection.3.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Schlussteil}{28}{section.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1}Zusammenfassung der Ergebnisse}{28}{subsection.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2}Ausblick}{29}{subsection.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\nonumberline Literatur}{i}{section*.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\nonumberline Abbildungsverzeichnis}{iv}{section*.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\nonumberline Tabellenverzeichnis}{iv}{section*.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\nonumberline Weiterf\IeC {\"u}hrende Links}{iv}{section*.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\nonumberline Anh\IeC {\"a}nge}{iv}{section*.9}

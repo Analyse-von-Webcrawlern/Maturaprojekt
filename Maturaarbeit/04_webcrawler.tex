@@ -1,0 +1,24 @@
+\subsection{Webcrawler}
+\subsubsection{Webcrawler, Definition}
+In der heutigen Zeit fällt oft der Begriff \emph{Bot}. Seltener werden die Begriffe \emph{Webcrawler} oder gar \emph{Webspider} und \emph{Harvstester} verwendet, obwohl sie meistens zutreffender wären. Die oben eingeführten Terme sollen hier nun nochmals genauer definiert werden: 
+\begin{description}
+	\item[Bot] Bot ist die Kurzform des Begriffs Ro\underline{bot} und beschreibt damit ein Programm, welches im Internet Aufgaben ausführt. Einige Bots arbeiten dabei autonom, wohingegen andere nach dem Erhalt einer vordefinierten Eingabe tätig werden \footcite[sinngemäß ins Deutsche übersetzt aus: ][]{def-bot}
+	
+	\item[Webcrawler] Webcrawler ist ein gängiges Beispiel eines Bots\footcite[sinngemäß ins Deutsche übersetzt aus: ][]{def-bot}. Ein Webcrawler folgt Hyperlinks auf Webseiten und speichert nach dem Aufruf einer Webseite deren Inhalt. Mithilfe von Algorithmen können dann die Betreiber von Suchmaschinen diese Seiten indexieren und in ihre Suchresultate mit aufnehmen.\footcite[sinngemäß ins Deutsche übersetzt aus: ][]{def-bot} Webcrawler können jedoch auch für schadhafte Zwecke missbraucht werden und beispielsweise alle E-Mail-Adressen einer Webseite herausfiltern. 
+	%TODO: VOLINKEN AF HARVESTER
+	
+	\item[Webspider] Eine Webspider ist ein Bot, welcher sich von Link zu Link durch das World Wide Web \footnote{\emph{World Wide Web} oder auch WWW wird im Deutschen oft fälschlicherweise als Synonym für den Begriff \emph{Internet} verwendet und beschreibt hierbei die Möglichkeit, Webseiten über das Medium Internet abzurufen} bewegt und hierbei Webseiten ausfindig macht und die Ergebnisse wiederum meist an einen Suchmaschinenbetreiber meldet.\footcite[sinngemäß ins Deutsche übersetzt aus: ][]{def-spider}
+	
+	\item[Harvester] Ein Harvester ist eine spezielle Form eines Webcrawlers, welcher das Internet gezielt nach E-Mail-Adressen durchforstet, um in einem zweiten Moment an diese Adressen dann Spamnachrichten verschicken zu können.
+	%evtl. vgl Fußnote auf https://web.archive.org/web/20140419020009/http://www.internet-sicherheit.de/institut/buch-sicher-im-internet/workshops-und-themen/internet-und-struktur/e-mail-adress-harvesting/ 
+\end{description}
+Wie aus den oben aufgeführten Definitionen hervorgeht, beschreiben die Begriffe stets ein ähnliches Prinzip. Vor allem die Ausdrücke Webcrawler, Webspider und Harvester sind in ihrer Bedeutung nahezu ident. Deshalb werden diese Begriffe oft als Synonyme verwendet und unter dem Oberbegriff Bot zusammengefasst.  
+
+
+
+
+
+
+
+
+Nachdem nun der Begriff des Webcrawlers definiert ist, kann auf die Funktionsweise dessel-bigen näher eingegangen werden. Ein Webcrawler hat, wie bereits erwähnt, stets ein Ziel, auf welches er programmiert wurde. Diese Ziele können verschieden sein und reichen vom Indexieren von Webseiten bis hin zum Sammeln von E-Mail-Adressen. Diese Ziele werden unter Punkt Einsatzzweck von Webcrawlern nochmals genauer erläutert. Das Programm, welches um Webcrawler wird, läuft meist auf einem Server. Es durchforstet dann das Inter-net und liest sich den Inhalt von all jenen Webseiten durch, auf welche sie stoßen. Dieser Inhalt wird dann mithilfe verschiedenster Algorythmen analysiert und die Ergebnisse werden dann in regelmäßigen Abständen an einen Ort, meist der ursprüngliche Server mit ange-schlossener Datenbank, geschickt, wo sie dann gespeichert werden. Alternativ kann ein Webcrawler auch den gesamten Inhalt der Internetseite an den Server zurückschicken, wel-cher dann lokal die Analyse der gesammelten Daten übernimmt. 

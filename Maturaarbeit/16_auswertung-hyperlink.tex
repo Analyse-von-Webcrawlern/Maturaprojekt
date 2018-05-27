@@ -1,0 +1,46 @@
+\subsubsection{Hyperlink-Tarpit}
+Die erste der drei Tarpitformen, die VEVETA implementiert, ist, wie bereits zuvor erwähnt, die Hyperlink-Tarpit, dessen Ziel es ist, die Queue von klassischen Webcrawlern mit sinnlosen Hyperlinks zu verstopfen und sie so im besten Fall zu fangen. Hierbei lieferte die Analyse mit \emph{GoAccess} folgende Resultate\footnote{Die Resultate basieren auf den Logfiles, welche zwischen dem 01. August 2017 und 04. April 2018, sprich innerhalb von ca. acht Monaten, erstellt wurden.}:\\
+In den 247 Tagen, in welchen die Tarpit online war, wurden 342.020 Anfragen von 20.232 verschiedenen Besuchern\footnote{GoAcces zählt alle Aufrufe, welche an einem Tag von der gleichen IP-Adresse aus mit dem gleichen User-Agent getätigt wurden, als einen Besucher.} gezählt, dies entspricht einem Mittel von 1.384,69 Anfragen pro Tag. Wenn man bedenkt, dass die Seite nur für das Fangen von Webcrawlern online gestellt wurde, ist dies ein akzeptabler Wert. Im Durchschnitt hat hierbei jeder Besucher 16,9 Anfragen getätigt. Es wurden hierbei 185.300 verschiedene Webseiten bzw. Dateien angefragt, einige davon natürlich auch mehrfach. Ein Logfile, in welchem der Name und das Datum der generierten virtuellen Dateien gespeichert wurde, hatte am 04. April über 28.510.000 Einträge. Das Skript in reply.php zeigte somit sein volles Potential.
+\begin{table}[htb!]
+	\centering
+	\begin{tabular}{c|r}
+		\textbf{Anzahl der Anfragen}&\textbf{Datum}\\\hline
+		17.687&20. Dezember 2017\\
+		17.117&22. Dezember 2017\\
+		16.925&21. Dezember 2017\\
+		16.853&19. Dezember 2017\\
+		15.299&24. Dezember 2017\\
+		15.076&18. Dezember 2017\\
+		14.460&26. Dezember 2017\\
+		13.251&25. Dezember 2017\\
+		12.647&17. Dezember 2017\\
+		12.074&27. Dezember 2017\\
+		12.050&23. Dezember 2017\\
+		11.809&15. Dezember 2017\\
+		10.650&28. Dezember 2017\\
+		9.388&26. Dezember 2017\\
+		6.554&26. Februar 2018\\
+		6.325&27. Februar 2018\\
+		4.383&29. Dezember 2017\\
+		4.187&29. Januar 2018\\
+		3.892&30. März 2018\\
+		3.848&8. Februar 2018\\
+	\end{tabular}
+	\caption{Tage mit den meisten Anfragen}
+	\label{tab:top-hits}
+\end{table}
+Aus Tabelle \ref{tab:top-hits} lässt sich ganz klar erkennen, dass Ende Dezember ein Webcrawler in die Hyperlink-Tarpit geraten sein muss. Durch die Analyse der Logfiles ist ersichtlich, dass der Webcrawler mit dem User Agent \emph{Mozilla/5.0 (compatible; DotBot/1.1; http://www.opensiteexplorer.org/dotbot, help@moz.com)} für diese Aufrufe verantwortlich ist. DotBot ist ein Webcrawler, welcher von dem Suchmaschinenbetreiber Dotmic betrieben wurde. Dotmic ist eine sogenannte e-Commerce-Suchmaschine, dies bedeutet sie ist vor allem auf Onlineprodukte spezialisiert.\cite{dotmic} Nach der Schließung von Dotmic hat die amerikanische Firma SEOmoz, ein Unternehmen die sich auf SEO\footnote{Search Engine Optimization (SEO), zu Deutsch Suchmaschinenoptimierung, ist der Prozess der Anpassung der Struktur und des Inhaltes einer Webseite, mit dem Ziel, dass die Webseite von Suchmaschinen besser gefunden wird und bei Anfragen weiter oben in der Ergebnisliste aufscheint. Dies hat sich heutzutage zu einem wichtigen Bestandteil im Sektor Onlinemarketing hervorgehoben.} spezialisiert hat, die Betreibung des DotBot übernommen. DotBot wird von vielen als ein bösartiger Bot bezeichnet und gehandhabt, da er in der Vergangenheit öfters die robots.txt-Regeln missachtet hat und laut Distil Networks, dem weltweit führenden Unternehmen in der Entdeckung und Beseitigung von Bots, Inhalte von Webseiten ohne die Erlaubnis und namentliche Erwähnung des Urhebers stiehlt.\cite{dotbot} DotBot hat über den Verlauf der acht Monate mit 195.331 Anfragen weitaus am meisten Aufrufe getätigt. Zum Vergleich: Der \glqq zweitplatzierte\grqq, MegaIndex, hat die Webseite nur 6.398mal aufgerufen, über 30mal weniger. Durch die Missachtung der robots.txt und einem aggressiven Auftreten, welches auch in der Tarpit ersichtlich war, erzeugt DotBot somit als Nebeneffekt eine große Menge an Traffic und kann somit den Webserver unter Umständen so dermaßen belasten, dass er auf Anfragen von \glqq normalen\grqq\space Internetanwendern nicht mehr in der Lage ist zu antworten. Hiermit sieht man eindeutig, dass Webcrawler mit bösen Absichten die Richtlinien unter Punkt \ref{subsub:funk} missachten. DotBot hat hierbei beispielsweise eindeutig die Höflichkeitsrichtlinie missachtet.
+%TODO: WEGLOESCHEN???
+%MegaIndex war für Platz 19 und 20 der Top 20 Anfragen aus Tabelle \ref{tab:top-hits} verantwortlich. MegaIndex wird vom gleichnamigem russischem Unternehmen in Kooperation mit ALT Web Capital betrieben und ist, wie DotBot, dafür bekannt Inhalte, vor allem Links, von Webseiten zu stehlen. Er wird ebenfalls von Distil Networks als schadhafter Bot gekennzeichnet \cite{megaindex}.\\
+%TODO EVTL. VON WO
+%TODOEVTL. BOTNETZ
+%INSPIRATION:
+%
+%\begin{itemize}
+%	\item Insgesamt 342.020 Anfragen
+%	\item 20.232 verschiedene Besucher\footnote{GoAcces zählt alle Aufrufe, welche an einem Tag von der gleichen IP-Adresse aus mit dem gleichen User-Agent getätigt wurden als einen Besucher}
+%	\item Insgesamt wurden 185.300 verschiedene Dateien angefragt
+%	\item Eine Traffic von 7,48 GB
+%	\item Ein Angriff eines Botnetzes
+%	\item Sechs Anhäufungen von Anfragen in einem Zeitraum, in welchem Webcrawler in der Tarpit festgehalten wurden
+%\end{itemize}

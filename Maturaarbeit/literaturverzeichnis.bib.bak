@@ -1,0 +1,9 @@
+% Encoding: UTF-8
+@misc{codecommit,
+  author = {Daniel Spiewak},
+  title = {The {M}agic {B}ehind {P}arser {C}ombinators},
+  year = {2009},
+  howpublished = "\url{http://www.codecommit.com/blog/scala/the-magic-behind-parser-combinators}",
+  note = "[Online; Zugriff am 03.03.2014]"
+}
+@Comment{jabref-meta: databaseType:bibtex;}
