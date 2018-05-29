@@ -41,8 +41,6 @@
 <body class="h-100">
     <!-- PHP-Funktionen -->
 
-
-
     <?php
         function generateMailAdress(){
             $adress = getenv('REMOTE_ADDR');
@@ -52,10 +50,6 @@
             return $adress."-".$currentdate.$domain;
         }
     ?>
-
-
-
-
 
 
     <!-- 4 Bereiche -->
@@ -73,7 +67,7 @@
                 <h2 class="text-uppercase subtitle" data-bs-hover-animate="pulse"><a href="stats.html" class="color-inherit link-hover">stats</a></h2>
             </div>
             <div class="col-6 d-flex justify-content-center align-items-center mycol" id="contact">
-                <h2 class="text-uppercase subtitle" data-bs-hover-animate="pulse"><a href="contact.html" class="color-inherit link-hover">contact</a></h2>
+                <h2 class="text-uppercase subtitle" data-bs-hover-animate="pulse"><a href="contact.php" class="color-inherit link-hover">contact</a></h2>
             </div>
         </div>
     </div>
