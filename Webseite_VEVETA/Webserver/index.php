@@ -108,6 +108,7 @@
     <div id="bottom-center" class="w-100 text-center">
         <p>Diese Webseite ist als Informationsseite für mein Maturaprojekt (Abschlussprüfung) gedacht. - (C)opyright 2018<br></p>
         <p>
+            <a class="text-warning bg-danger" href="_index.php">Legacy (Alte Seite)</a>
             <a class="text-warning bg-danger" href="weitere-informationen.html">Weitere Informationen</a>
             <a class="text-warning bg-danger" href="your-test.php">Dein Test</a>
             <?php
