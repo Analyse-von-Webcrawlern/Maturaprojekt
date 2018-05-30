@@ -62,27 +62,26 @@
                     </div>
                     <div class="form-row">
                         <div class="col">
-                            <div class="form-group"><textarea class="form-control form-control-lg my-input" rows="5" name="comment" required="" placeholder="Your Comment"></textarea></div>
+                            <div class="form-group"><textarea class="form-control form-control-lg my-input" rows="5" name="comments" required="" placeholder="Your Comment"></textarea></div>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="col-8">
-                            <div class="alert alert-success" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><span><strong>Success!&nbsp;</strong>Your message has been send successfully.</span></div>
+                            <?php
+                              if (isset($_GET['send'])) {
+                                if (strcmp($_GET['send'], "true")==0) {
+                                  echo '<div class="alert alert-success" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><span><strong>Success!&nbsp;</strong>Your message has been send successfully.</span></div>'
+                                }else{
+                                  echo '<div class="alert alert-danger" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><span><strong>Error!&nbsp;</strong>Something went wrong! Please try again later</span></div>'
+                                }
+                              }
+                            ?>
                         </div>
                         <div class="col-4"><button class="btn btn-outline-primary btn-block back-button" type="submit"><i class="fa fa-send-o"></i>&nbsp;Send</button></div>
                     </div>
                 </form>
             </div>
         </div>
-        <?php
-					if (isset($_GET['send'])) {
-						if (strcmp($_GET['send'], "true")==0) {
-							echo '<div class="alert alert-success">Your message was successfully delivered.</div>';
-						}else{
-							echo '<div class="alert alert-danger">Ups... it seems that there had occured a problem while sending your message.<br>Please try again later</div>';
-						}
-					}
-				?>
         <div class="row">
             <div class="col"><a class="btn btn-primary btn-block back-button" role="button" href="index.php">Zur Startseite</a></div>
         </div>
