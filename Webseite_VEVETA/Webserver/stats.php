@@ -40,25 +40,25 @@
   include 'connect-database.php';
 
   //Acces log
-  $statement = "SELECT count(id) AS "anzahl" FROM access_log";
+  $statement = "SELECT count(id) AS 'anzahl' FROM access_log";
   $result = $conn->query($statement);
   $row = $result->fetch_assoc();
   $access = $row["anzahl"];
 
   //Virtuelle Dateien
-  $statement = "SELECT count(id) AS "anzahl" FROM failedlogins";
+  $statement = "SELECT count(id) AS 'anzahl' FROM failedlogins";
   $result = $conn->query($statement);
   $row = $result->fetch_assoc();
   $virtuelleD = 4000000;
 
   //failed login
-  $statement = "SELECT count(id) AS "anzahl" FROM failedlogins";
+  $statement = "SELECT count(id) AS 'anzahl' FROM failedlogins";
   $result = $conn->query($statement);
   $row = $result->fetch_assoc();
   $failedLogin = $row["anzahl"];
 
   //failed login Wordpress
-  $statement = "SELECT count(id) AS "anzahl" FROM failedlogins WHERE wordpress = 1";
+  $statement = "SELECT count(id) AS 'anzahl' FROM failedlogins WHERE wordpress = 1";
   $result = $conn->query($statement);
   $row = $result->fetch_assoc();
   $failedLoginWordpress = $row["anzahl"];
