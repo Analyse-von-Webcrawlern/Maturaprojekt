@@ -117,9 +117,10 @@
                                 <p class="m-0 display-4">
                                   <span class="nbanimate countingnumber">
                                     <?php
-                                      echo number_format ($failedLoginWordpressProzent, 2 , "," , ".") . "%";
+                                      echo round($failedLoginWordpressProzent,2);
                                     ?>
                                   </span>
+                                  %
                                 </p>
                                 <hr class="hr-white">
                                 <h2 class="number-description">waren davon Log In Versuche auf Wordpress</h2>
