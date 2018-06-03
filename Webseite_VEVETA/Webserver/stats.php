@@ -110,33 +110,21 @@
                                   </span>
                                 </p>
                                 <hr class="hr-white">
-                                <h2 class="number-description">Anzahl an Log In Versuchen (gesamt)</h2>
+                                <h2 class="number-description">Anzahl an Log In Versuchen</h2>
                             </div>
                             <div class="col-12 col-sm-6 col-lg-3 pt-5">
                                 <p class="m-0"><i class="fa fa-wordpress fa-2x" aria-hidden="true"></i></p>
                                 <p class="m-0 display-4">
                                   <span class="nbanimate countingnumber">
                                     <?php
-                                      echo $failedLoginWordpress;
+                                      echo number_format ($failedLoginWordpressProzent, 2 , "," , ".") . "%";
                                     ?>
                                   </span>
                                 </p>
                                 <hr class="hr-white">
-                                <h2 class="number-description">Anzahl an Log In Versuchen<br>(Wordpress)</h2>
+                                <h2 class="number-description">waren davon Log In Versuche auf Wordpress</h2>
                             </div>
-                            <div class="col-12 col-sm-6 col-lg-3 pt-5">
-                                <p class="m-0"><i class="fa fa-wordpress fa-2x" aria-hidden="true"></i></p>
-                                <p class="m-0 display-4">
-                                  <span class="nbanimate countingnumber">
-                                    <?php
-                                      echo $failedLoginWordpressProzent;
-                                    ?>
-                                  </span>
-                                </p>
-                                <hr class="hr-white">
-                                <h2 class="number-description">Anzahl an Log In Versuchen<br>(Wordpress prozentuell)</h2>
-                            </div>
-                        </div><button class="btn btn-primary btn-block refresh" type="button"><i class="fa fa-refresh"></i>&nbsp;Refresh</button></div>
+                        </div><button class="btn btn-primary btn-block refresh" type="button" onClick="window.location.reload()"><i class="fa fa-refresh"></i>&nbsp;Refresh</button></div>
                 </section>
             </div>
         </div>
