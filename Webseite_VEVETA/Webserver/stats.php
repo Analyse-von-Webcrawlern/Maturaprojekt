@@ -130,11 +130,11 @@
             </div>
         </div>
         <div class="row">
-            <div class="col"><a class="btn btn-primary btn-block back-button" role="button" href="index.html">Zur Startseite</a></div>
+            <div class="col"><a class="btn btn-primary btn-block back-button" role="button" href="index.php">Zur Startseite</a></div>
         </div>
     </div>
     <div id="top-left">
-        <h1 class="title"><a href="index.html" class="home-link">VEVETA<br></a></h1>
+        <h1 class="title"><a href="index.php" class="home-link">VEVETA<br></a></h1>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
