@@ -17,9 +17,9 @@
 	if (strcmp($keksHash,saltPassword($_POST['pass'], $_POST['login']))===0) // Prüfung mit Salt
 	{
 		$_SESSION['aktiv']="true";
-		header('location: index.php');
+		//header('location: index.php');
 	}else{
-		include 'connect-database.php';
+		/*include 'connect-database.php';
 
 	  //Acces log
 	  $statement = "SELECT count(id) AS 'anzahl' FROM access_log";
@@ -47,7 +47,7 @@
 	  $failedLoginWordpressProzent = doubleval($failedLoginWordpress) / doubleval($failedLogin) * 100;
 
 
-
+*/
 
 
 		$file = fopen("/home/thomas/Schreibtisch/failed-login-attemps.log", "a");
