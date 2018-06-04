@@ -362,6 +362,6 @@ btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dro
 
 @media (max-width: 1000px) {
   .hr-white {
-    display: none;
+    display:none;
   }
 }

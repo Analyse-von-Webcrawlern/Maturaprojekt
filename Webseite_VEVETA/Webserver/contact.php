@@ -70,9 +70,9 @@
                             <?php
                               if (isset($_GET['send'])) {
                                 if (strcmp($_GET['send'], "true")==0) {
-                                  echo '<div class="alert alert-success" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><span><strong>Success!&nbsp;</strong>Your message has been send successfully.</span></div>';
+                                  echo '<div class="alert alert-success" data-aos="fade-up" data-aos-once="true" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><span><strong>Success!&nbsp;</strong>Your message has been send successfully.</span></div>';
                                 }else{
-                                  echo '<div class="alert alert-danger" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><span><strong>Error!&nbsp;</strong>Something went wrong! Please try again later</span></div>';
+                                  echo '<div class="alert alert-danger" data-aos="fade-up" data-aos-once="true" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><span><strong>Error!&nbsp;</strong>Something went wrong! Please try again later</span></div>';
                                 }
                               }
                             ?>
