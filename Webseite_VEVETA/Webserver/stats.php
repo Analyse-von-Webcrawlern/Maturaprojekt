@@ -125,7 +125,7 @@
                                 <hr class="hr-white">
                                 <h2 class="number-description">waren davon Log In Versuche auf Wordpress</h2>
                             </div>
-                        </div><button class="btn btn-primary btn-block refresh" type="button" onClick="window.location.reload()"><i class="fa fa-refresh"></i>&nbsp;Refresh</button></div>
+                        </div><button class="btn btn-primary btn-block refresh" type="button" onClick="addspinn(this)"><i class="fa fa-refresh"></i>&nbsp;Refresh</button></div>
                 </section>
             </div>
         </div>
@@ -140,6 +140,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/-Animated-numbers-section-BS4-.js"></script>
     <script src="assets/js/bs-animation.js"></script>
+    <script src="assets/js/do-spin.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
 </body>
 

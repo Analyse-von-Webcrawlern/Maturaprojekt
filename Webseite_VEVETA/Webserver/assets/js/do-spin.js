@@ -1,3 +1,4 @@
 function addspinn(element) {
-  $(element +" > i").addClass("fa-spin");
+  $(element).children().addClass("fa-spin");
+  location.reload();
 }
