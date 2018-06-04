@@ -82,13 +82,14 @@
                     session_start('Maturaprojekt');
 
                     if (isset($_SESSION['aktiv'])) {
-                        echo '<a class="dropdown-item" role="presentation" href="login.html"><i class="fa fa-sign-out"></i>&nbsp;Log-Out</a>';
+                        echo '<a class="dropdown-item" role="presentation" href="logout.php"><i class="fa fa-sign-out"></i>&nbsp;Log-Out</a>';
                         echo '<div class="dropdown-divider" role="presentation"></div>';
                         echo '<a class="dropdown-item" role="presentation" href="http://maturaprojekt.ddns.net/monitoring.html">Monitoring</a>';
                         echo '<a class="dropdown-item" role="presentation" href="logfiles.html">Logfiles</a>';
                         echo '<a class="dropdown-item" role="presentation" href="#">Anmeldeversuche</a>';
                         echo '<a class="dropdown-item" role="presentation" href="#">Generierte Links</a>';
                         echo '<a class="dropdown-item" role="presentation" href="http://maturaprojekt.ddns.net/robots.txt">robots.txt</a>';
+                        echo '<a class="dropdown-item" role="presentation" href="/phpmyadmin/">phpMyAdmin</a>';
                     }else{
                         echo '<a class="dropdown-item" role="presentation" href="login.html"><i class="fa fa-sign-in"></i>&nbsp;Log-In</a>';
                     }
