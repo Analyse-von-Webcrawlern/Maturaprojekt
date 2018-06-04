@@ -47,6 +47,12 @@
 		<?php
 
 		function writeGeneratedLinks($link){
+			include 'connect-database.php';
+
+			$statement = "UPDATE virtuelle_dateien SET number = number +1";
+		  $result = $mysqli->query($statement);
+
+
 			$link = substr($link, 0, -2);
 			$file = fopen("/home/thomas/Schreibtisch/generated-links.log", "a");
 			$txt = getenv('REMOTE_ADDR')." ".$_SERVER['HTTP_USER_AGENT']." [".date('d.m.Y-H.i.s')."] ".$link."\n";
@@ -181,7 +187,7 @@
 												$target = $target . "-";
 								 				for ($k=0; $k < $link; $k++) {
 								 					$target = $target . $buchstaben[rand(0,225)];
-								 				}						
+								 				}
 												echo '<a href="mailto:'.$target.'@maturaprojekt.ddns.net">'.$target.'@maturaprojekt.ddns.net</a>';
 											}else{
 												$f_contents = file("mailinglist.txt");

@@ -49,7 +49,7 @@
   $statement = "SELECT count(id) AS 'anzahl' FROM failedlogins";
   $result = $mysqli->query($statement);
   $row = $result->fetch_assoc();
-  $virtuelleD = 4000000;
+  $virtuelleD = 28953902;
 
   //failed login
   $statement = "SELECT count(id) AS 'anzahl' FROM failedlogins";
@@ -91,14 +91,14 @@
                             <div class="col-12 col-sm-6 col-lg-3 pt-5">
                                 <p class="m-0"><i class="fa fa-file-o fa-2x" aria-hidden="true"></i></p>
                                 <p class="m-0 display-4">
-                                  <span class="nbanimate nbreplay countingnumber">
+                                  <span class="nbanimate countingnumber">
                                     <?php
                                       echo $virtuelleD;
                                     ?>
                                   </span>
                                 </p>
                                 <hr class="hr-white">
-                                <h2 class="number-description">Anzahl der generierten "virtuellen Dateien" (heute)</h2>
+                                <h2 class="number-description">Anzahl der generierten "virtuellen Dateien"</h2>
                             </div>
                             <div class="col-12 col-sm-6 col-lg-3 pt-5">
                                 <p class="m-0"><i class="fa fa-lock fa-2x" aria-hidden="true"></i></p>
