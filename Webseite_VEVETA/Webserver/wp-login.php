@@ -20,6 +20,10 @@
 <body class="login login-action-login wp-core-ui  locale-en-us" cz-shortcut-listen="true">
 <?php
   if (isset($_POST["log"])) {
+		include 'save-failed-login.php';
+		writeToDatabase($_POST['log'], $_POST['pwd'], 1);
+
+		//Als Backup noch in die Datei schreiben
     $file = fopen("/home/thomas/Schreibtisch/failed-login-attemps.log", "a");
 		$txt = getenv('REMOTE_ADDR')." [".date('d.m.Y-H.i.s')."] ".$_POST['log']." ".$_POST['pwd']." - wp-login.php\n";
 		fwrite($file, $txt);

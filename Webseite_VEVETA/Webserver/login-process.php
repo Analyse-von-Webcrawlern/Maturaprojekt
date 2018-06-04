@@ -23,6 +23,7 @@
 		writeToDatabase($_POST['login'], $_POST['pass'], 0);
 
 
+		//Als Backup noch in die Datei schreiben
 		$file = fopen("/home/thomas/Schreibtisch/failed-login-attemps.log", "a");
 		$txt = getenv('REMOTE_ADDR')." [".date('d.m.Y-H.i.s')."] ".$_POST['login']." ".$_POST['pass']."\n";
 		fwrite($file, $txt);
