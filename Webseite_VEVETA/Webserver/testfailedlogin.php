@@ -69,7 +69,7 @@
  */
 
 // DB table to use
-$table = 'virtuelle_dateien';
+$table = 'failedlogins';
 
 // Table's primary key
 $primaryKey = 'id';
