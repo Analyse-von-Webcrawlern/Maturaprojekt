@@ -50,11 +50,13 @@
   $result = $mysqli->query($statement);
   $row = $result->fetch_assoc();
   $virtuelleD = $row["number"];
-  $virtuelleDLetzte = $row["letzte"];
-  
 
 
-
+  //virtuelle dateien letzte
+  $statement = "SELECT TIMESTAMPDIFF(MINUTE,letzte,now()) AS diff from virtuelle_dateien; ";
+  $result = $mysqli->query($statement);
+  $row = $result->fetch_assoc();
+  $virtuelleDLetzte = $row["diff"];
 
   //failed login
   $statement = "SELECT count(id) AS 'anzahl' FROM failedlogins";
@@ -128,10 +130,9 @@
                                       echo $failedLogin;
                                     ?>
                                   </span>
-                                  %
                                 </p>
                                 <hr class="hr-white">
-                                <h2 class="number-description">waren davon Log In Versuche auf Wordpress</h2>
+                                <h2 class="number-description">fehlgeschlagene Log In Versuche</h2>
                             </div>
                             <div class="col-12 col-sm-6 col-lg-4 pt-5">
                                 <p class="m-0"><i class="fa fa-wordpress fa-2x" aria-hidden="true"></i></p>
@@ -141,7 +142,6 @@
                                       echo $failedLoginWordpress;
                                     ?>
                                   </span>
-                                  %
                                 </p>
                                 <hr class="hr-white">
                                 <h2 class="number-description">waren davon Log In Versuche auf Wordpress</h2>
