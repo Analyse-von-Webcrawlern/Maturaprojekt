@@ -42,7 +42,11 @@
 
   <script>
     $(document).ready( function () {
-      $('#table_id').DataTable();
+      $('#example').DataTable( {
+        "processing": true,
+        "serverSide": true,
+        "ajax": "scripts/server_processing.php"
+    } );
     } );
   </script>
 </head>
