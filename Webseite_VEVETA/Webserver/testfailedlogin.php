@@ -89,7 +89,7 @@ $columns = array(
 // SQL server connection information
 $sql_details = array(
     'user' => 'root',
-    'pass' => 'MMSQLvimP',
+    'pass' => 'MMSQLvimP!',
     'db'   => 'veveta_access_logs',
     'host' => 'localhost'
 );
