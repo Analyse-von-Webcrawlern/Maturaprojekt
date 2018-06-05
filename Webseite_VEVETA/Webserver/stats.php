@@ -118,10 +118,10 @@
                                   </span>
                                 </p>
                                 <hr class="hr-white">
-                                <h2 class="number-description">Un so viel waren es heute (die letzte vor <?php echo $virtuelleDLetzte?> Minuten)</h2>
+                                <h2 class="number-description">Un so viel waren es heute<br />(die letzte vor <?php echo $virtuelleDLetzte?> Minuten)</h2>
                             </div>
                           </div>
-                          <hr class="hr-white">
+                          <hr class="hr-white divider">
                           <div class="row pb-5">
                             <div class="col-12 col-sm-6 col-lg-4 pt-5">
                                 <p class="m-0"><i class="fa fa-wordpress fa-2x" aria-hidden="true"></i></p>
