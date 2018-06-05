@@ -46,10 +46,11 @@
   $access = $row["anzahl"];
 
   //Virtuelle Dateien
-  $statement = "SELECT * FROM virtuelle_dateien;";
+  $statement = "SELECT number, heute FROM virtuelle_dateien;";
   $result = $mysqli->query($statement);
   $row = $result->fetch_assoc();
   $virtuelleD = $row["number"];
+  $virtuelleDheute = $row["heute"];
 
 
   //virtuelle dateien letzte
@@ -112,12 +113,12 @@
                                 <p class="m-0 display-4">
                                   <span class="nbanimate countingnumber">
                                     <?php
-                                      echo $virtuelleDLetzte;
+                                      echo $virtuelleDheute;
                                     ?>
                                   </span>
                                 </p>
                                 <hr class="hr-white">
-                                <h2 class="number-description">Vor so vielen Minuten wurde die letzte virtuelle Datei generiert.</h2>
+                                <h2 class="number-description">Un so viel waren es heute (die letzte vor <?php echo $virtuelleDLetzte?> Minuten)</h2>
                             </div>
                           </div>
                           <hr class="hr-white">
