@@ -361,8 +361,9 @@ btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dro
 }
 
 .divider{
-  font-size: 20px;
-  color: #fff;
+  border: none;
+  height: 3px;
+  background-color: #CDCFD4;
 }
 
 @media (max-width: 1000px) {
