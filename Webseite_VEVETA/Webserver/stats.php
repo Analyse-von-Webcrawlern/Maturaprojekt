@@ -46,10 +46,15 @@
   $access = $row["anzahl"];
 
   //Virtuelle Dateien
-  $statement = "SELECT count(id) AS 'anzahl' FROM failedlogins";
+  $statement = "SELECT * FROM virtuelle_dateien;";
   $result = $mysqli->query($statement);
   $row = $result->fetch_assoc();
-  $virtuelleD = 28953902;
+  $virtuelleD = $row["number"];
+  $virtuelleDLetzte = $row["letzte"];
+  
+
+
+
 
   //failed login
   $statement = "SELECT count(id) AS 'anzahl' FROM failedlogins";
@@ -76,7 +81,7 @@
                 <section>
                     <div class="container text-center">
                         <div class="row pb-5">
-                            <div class="col-12 col-sm-6 col-lg-3 pt-5">
+                            <div class="col-12 col-sm-6 col-lg-4 pt-5">
                                 <p class="m-0"><i class="fa fa-list fa-2x" aria-hidden="true"></i></p>
                                 <p class="m-0 display-4">
                                   <span class="nbanimate countingnumber">
@@ -88,7 +93,7 @@
                                 <hr class="hr-white">
                                 <h2 class="number-description">Anzahl Logeinträge</h2>
                             </div>
-                            <div class="col-12 col-sm-6 col-lg-3 pt-5">
+                            <div class="col-12 col-sm-6 col-lg-4 pt-5">
                                 <p class="m-0"><i class="fa fa-file-o fa-2x" aria-hidden="true"></i></p>
                                 <p class="m-0 display-4">
                                   <span class="nbanimate countingnumber">
@@ -100,19 +105,48 @@
                                 <hr class="hr-white">
                                 <h2 class="number-description">Anzahl der generierten "virtuellen Dateien"</h2>
                             </div>
-                            <div class="col-12 col-sm-6 col-lg-3 pt-5">
+                            <div class="col-12 col-sm-6 col-lg-4 pt-5">
                                 <p class="m-0"><i class="fa fa-lock fa-2x" aria-hidden="true"></i></p>
+                                <p class="m-0 display-4">
+                                  <span class="nbanimate countingnumber">
+                                    <?php
+                                      echo $virtuelleDLetzte;
+                                    ?>
+                                  </span>
+                                </p>
+                                <hr class="hr-white">
+                                <h2 class="number-description">Vor so vielen Minuten wurde die letzte virtuelle Datei generiert.</h2>
+                            </div>
+                          </div>
+                          <hr class="hr-white">
+                          <div class="row pb-5">
+                            <div class="col-12 col-sm-6 col-lg-4 pt-5">
+                                <p class="m-0"><i class="fa fa-wordpress fa-2x" aria-hidden="true"></i></p>
                                 <p class="m-0 display-4">
                                   <span class="nbanimate countingnumber">
                                     <?php
                                       echo $failedLogin;
                                     ?>
                                   </span>
+                                  %
                                 </p>
                                 <hr class="hr-white">
-                                <h2 class="number-description">Anzahl an Log In Versuchen</h2>
+                                <h2 class="number-description">waren davon Log In Versuche auf Wordpress</h2>
                             </div>
-                            <div class="col-12 col-sm-6 col-lg-3 pt-5">
+                            <div class="col-12 col-sm-6 col-lg-4 pt-5">
+                                <p class="m-0"><i class="fa fa-wordpress fa-2x" aria-hidden="true"></i></p>
+                                <p class="m-0 display-4">
+                                  <span class="nbanimate countingnumber">
+                                    <?php
+                                      echo $failedLoginWordpress;
+                                    ?>
+                                  </span>
+                                  %
+                                </p>
+                                <hr class="hr-white">
+                                <h2 class="number-description">waren davon Log In Versuche auf Wordpress</h2>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4 pt-5">
                                 <p class="m-0"><i class="fa fa-wordpress fa-2x" aria-hidden="true"></i></p>
                                 <p class="m-0 display-4">
                                   <span class="nbanimate countingnumber">
@@ -123,9 +157,10 @@
                                   %
                                 </p>
                                 <hr class="hr-white">
-                                <h2 class="number-description">waren davon Log In Versuche auf Wordpress</h2>
+                                <h2 class="number-description">also fast 100%</h2>
                             </div>
-                        </div><button class="btn btn-primary btn-block refresh" type="button" onClick="addspinn(this)"><i class="fa fa-refresh"></i>&nbsp;Refresh</button></div>
+                        </div>
+                        <button class="btn btn-primary btn-block refresh" type="button" onClick="addspinn(this)"><i class="fa fa-refresh"></i>&nbsp;Refresh</button></div>
                 </section>
             </div>
         </div>
