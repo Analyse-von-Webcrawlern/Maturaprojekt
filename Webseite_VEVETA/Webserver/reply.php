@@ -49,7 +49,7 @@
 		function writeGeneratedLinks($link){
 			include 'connect-database.php';
 
-			$statement = "UPDATE virtuelle_dateien SET number = number +1";
+			$statement = "UPDATE virtuelle_dateien SET number = number +1;UPDATE virtuelle_dateien SET heute = heute +1;"
 		  $result = $mysqli->query($statement);
 
 

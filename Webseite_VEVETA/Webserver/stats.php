@@ -109,7 +109,7 @@
                                 <h2 class="number-description">Anzahl der generierten "virtuellen Dateien"</h2>
                             </div>
                             <div class="col-12 col-sm-6 col-lg-4 pt-5">
-                                <p class="m-0"><i class="fa fa-lock fa-2x" aria-hidden="true"></i></p>
+                                <p class="m-0"><i class="fa fa-clock fa-2x" aria-hidden="true"></i></p>
                                 <p class="m-0 display-4">
                                   <span class="nbanimate countingnumber">
                                     <?php
@@ -121,7 +121,7 @@
                                 <h2 class="number-description">Un so viel waren es heute<br />(die Letzte vor <?php echo $virtuelleDLetzte?> Minuten)</h2>
                             </div>
                             <div class="col-12 col-sm-6 col-lg-4 pt-5">
-                                <p class="m-0"><i class="fa fa-wordpress fa-2x" aria-hidden="true"></i></p>
+                                <p class="m-0"><i class="fa fa-lock fa-2x" aria-hidden="true"></i></p>
                                 <p class="m-0 display-4">
                                   <span class="nbanimate countingnumber">
                                     <?php
@@ -145,7 +145,7 @@
                                 <h2 class="number-description">waren davon Log In Versuche auf Wordpress</h2>
                             </div>
                             <div class="col-12 col-sm-6 col-lg-4 pt-5">
-                                <p class="m-0"><i class="fa fa-wordpress fa-2x" aria-hidden="true"></i></p>
+                                <p class="m-0"><i class="fa fa-percent fa-2x" aria-hidden="true"></i></p>
                                 <p class="m-0 display-4">
                                   <span class="nbanimate countingnumber">
                                     <?php
