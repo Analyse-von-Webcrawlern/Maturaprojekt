@@ -63,7 +63,7 @@
 \usepackage[
 	breaklinks=true, 
 	pdfauthor={Thomas Depian},
-	pdftitle={TITEL},
+	pdftitle={Analyse von Webcrawlern mithilfe verschiedener Tarpits},
 	pdfkeywords={webcrawler, webspider, bots, tarpit},
 	hidelinks
 ]{hyperref}
@@ -87,7 +87,7 @@
 %Literaturverzeichnis
 \usepackage[style=ieee,babel=hyphen]{biblatex}
 %\usepackage[backend=biber,style=apa]{biblatex}
-%\usepackage[backend=biber, style=alphabetic, citestyle=authoryear]{biblatex}
+%\usepackage[backend=biber, style=alphabetic, style=authoryear]{biblatex}
 \bibliography{literaturverzeichnis}
 %\addbibresource{literaturverzeichnis.bib}
 
@@ -168,11 +168,10 @@
 	\input{20_ausblick}
 	\newpage
 	\setcounter{page}{1}
-	\pagenumbering{roman}
+	\pagenumbering{Roman}
 	\printbibliography
 	\listoffigures
 	\listoftables
-	\addsec{Weiterführende Links}
-	\addsec{Anhänge}
+	%\printbibliography[title={Weiterführende Literatur},keyword={further}]
 \end{document}
 

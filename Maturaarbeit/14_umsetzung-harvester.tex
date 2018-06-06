@@ -6,7 +6,7 @@ Um Harvester in die Falle zu locken besitzt VEVETA zwei Methoden:
 \end{enumerate}
 \paragraph{Generieren einer E-Mail-Adresse anhand der IP-Adresse}\mbox{}\\
 Dem Aufrufer wird auf der Landingpage\footnote{Als Landingpage wird in der Regel jene Webseite bezeichnet, welche beim Aufruf einer URL als erstes angezeigt wird} neben einem Kontaktformular eine E-Mail-Adresse angezeigt, welche folgende Form aufweist: \emph{[IP-ADRESSE]-[DATUM]-[UHRZEIT]@maturaprojekt.ddns.net}.\\
-Damit Harvester diese E-Mail-Adresse auch schnell finden, wurde sie mit dem Schlüsselwort \emph{mailto:} gekennzeichnet, das in HTML als Kennzeichen für eine E-Mail-Adresse verwendet wird. Der Code zum generieren dieser E-Mail-Adresse ist in der Datei \emph{index.php} inkludiert:
+Damit Harvester diese E-Mail-Adresse auch schnell finden, wurde sie mit dem Schlüsselwort \emph{mailto:} gekennzeichnet, das in HTML als Kennzeichen für eine E-Mail-Adresse verwendet wird. Der Code zum generieren dieser E-Mail-Adresse ist in der Datei \emph{index.php} inkludiert:\\
 \lstinputlisting[language=PHP, firstline=378, lastline=389]{sourcefiles/index.php}
 Ein Aufruf der Datei index.php würde beispielsweise folgende E-Mail-Adresse generieren:
 \emph{82.52.47.189-02.04.2018-16.20.58@maturaprojekt.ddns.net}, welche aus den Augen eines Harvesters folgende HTML-Struktur aufweist:\\

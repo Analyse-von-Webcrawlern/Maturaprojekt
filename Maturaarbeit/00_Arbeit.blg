@@ -1,26 +1,26 @@
-[0] Config.pm:327> INFO - This is Biber 2.3
-[0] Config.pm:330> INFO - Logfile is '00_Arbeit.blg'
-[43] biber-MSWIN:284> INFO - === 
-[79] Biber.pm:346> INFO - Reading '00_Arbeit.bcf'
-[200] Biber.pm:689> INFO - Found 38 citekeys in bib section 0
-[206] Biber.pm:3066> INFO - Processing section 0
-[232] Biber.pm:3206> INFO - Looking for bibtex format file 'literaturverzeichnis.bib' for section 0
-[240] bibtex.pm:1062> INFO - Decoding LaTeX character macros into UTF-8
-[244] bibtex.pm:923> INFO - Found BibTeX data source 'literaturverzeichnis.bib'
-[259] Utils.pm:147> WARN - Datamodel: Entry 'zaehler-webseiten' (literaturverzeichnis.bib): Invalid format 'date' of date field 'date' - ignoring
-[261] Utils.pm:147> WARN - Datamodel: Entry 'robots-date' (literaturverzeichnis.bib): Invalid format 'date' of date field 'date' - ignoring
-[263] Utils.pm:147> WARN - Datamodel: Entry 'meta-w3c' (literaturverzeichnis.bib): Invalid format 'date' of date field 'date' - ignoring
-[265] Utils.pm:147> WARN - Datamodel: Entry 'meta-beispiel' (literaturverzeichnis.bib): Invalid format 'date' of date field 'date' - ignoring
-[266] Utils.pm:147> WARN - Datamodel: Entry 'acap-was' (literaturverzeichnis.bib): Invalid format 'date' of date field 'date' - ignoring
-[269] Utils.pm:147> WARN - Datamodel: Entry 'googlebot-googleconsole' (literaturverzeichnis.bib): Invalid format 'date' of date field 'date' - ignoring
-[271] Utils.pm:147> WARN - Datamodel: Entry 'googlebot-user-agent' (literaturverzeichnis.bib): Invalid format 'date' of date field 'date' - ignoring
-[304] Utils.pm:147> WARN - Datamodel: Entry 'dotmic' (literaturverzeichnis.bib): Invalid format 'date' of date field 'date' - ignoring
-[305] Utils.pm:147> WARN - Datamodel: Entry 'dotbot' (literaturverzeichnis.bib): Invalid format 'date' of date field 'date' - ignoring
-[310] Utils.pm:147> WARN - Datamodel: Entry 'firefox-versions' (literaturverzeichnis.bib): Invalid format 'date' of date field 'date' - ignoring
-[656] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[656] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[656] Biber.pm:2943> INFO - Sorting list 'none' of type 'entry' with scheme 'none' and locale 'de-DE'
-[656] Biber.pm:2947> INFO - No sort tailoring available for locale 'de-DE'
-[695] bbl.pm:505> INFO - Writing '00_Arbeit.bbl' with encoding 'UTF-8'
-[700] bbl.pm:596> INFO - Output to 00_Arbeit.bbl
-[734] Biber.pm:107> INFO - WARNINGS: 10
+[1] Config.pm:327> INFO - This is Biber 2.3
+[3] Config.pm:330> INFO - Logfile is '00_Arbeit.blg'
+[174] biber-MSWIN:284> INFO - === 
+[229] Biber.pm:346> INFO - Reading '00_Arbeit.bcf'
+[440] Biber.pm:689> INFO - Found 38 citekeys in bib section 0
+[452] Biber.pm:3066> INFO - Processing section 0
+[491] Biber.pm:3206> INFO - Looking for bibtex format file 'literaturverzeichnis.bib' for section 0
+[504] bibtex.pm:1062> INFO - Decoding LaTeX character macros into UTF-8
+[511] bibtex.pm:923> INFO - Found BibTeX data source 'literaturverzeichnis.bib'
+[538] Utils.pm:147> WARN - Datamodel: Entry 'zaehler-webseiten' (literaturverzeichnis.bib): Invalid format 'date' of date field 'date' - ignoring
+[542] Utils.pm:147> WARN - Datamodel: Entry 'robots-date' (literaturverzeichnis.bib): Invalid format 'date' of date field 'date' - ignoring
+[551] Utils.pm:147> WARN - Datamodel: Entry 'meta-w3c' (literaturverzeichnis.bib): Invalid format 'date' of date field 'date' - ignoring
+[553] Utils.pm:147> WARN - Datamodel: Entry 'meta-beispiel' (literaturverzeichnis.bib): Invalid format 'date' of date field 'date' - ignoring
+[555] Utils.pm:147> WARN - Datamodel: Entry 'acap-was' (literaturverzeichnis.bib): Invalid format 'date' of date field 'date' - ignoring
+[558] Utils.pm:147> WARN - Datamodel: Entry 'googlebot-googleconsole' (literaturverzeichnis.bib): Invalid format 'date' of date field 'date' - ignoring
+[562] Utils.pm:147> WARN - Datamodel: Entry 'googlebot-user-agent' (literaturverzeichnis.bib): Invalid format 'date' of date field 'date' - ignoring
+[619] Utils.pm:147> WARN - Datamodel: Entry 'dotmic' (literaturverzeichnis.bib): Invalid format 'date' of date field 'date' - ignoring
+[620] Utils.pm:147> WARN - Datamodel: Entry 'dotbot' (literaturverzeichnis.bib): Invalid format 'date' of date field 'date' - ignoring
+[634] Utils.pm:147> WARN - Datamodel: Entry 'firefox-versions' (literaturverzeichnis.bib): Invalid format 'date' of date field 'date' - ignoring
+[1946] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1946] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1947] Biber.pm:2943> INFO - Sorting list 'none' of type 'entry' with scheme 'none' and locale 'de-DE'
+[1947] Biber.pm:2947> INFO - No sort tailoring available for locale 'de-DE'
+[2090] bbl.pm:505> INFO - Writing '00_Arbeit.bbl' with encoding 'UTF-8'
+[2108] bbl.pm:596> INFO - Output to 00_Arbeit.bbl
+[2114] Biber.pm:107> INFO - WARNINGS: 10

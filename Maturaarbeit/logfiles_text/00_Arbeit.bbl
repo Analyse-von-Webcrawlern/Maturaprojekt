@@ -1,0 +1,785 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.5 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{none}{none}
+    \entry{bot-report-2016}{online}{}
+      \name{author}{1}{}{%
+        {{hash=009ce1a1e218841e9fa7422f23d8fdb8}{Zeifman}{Z\bibinitperiod}{Igal}{I\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{009ce1a1e218841e9fa7422f23d8fdb8}
+      \strng{fullhash}{009ce1a1e218841e9fa7422f23d8fdb8}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{24}
+      \field{month}{01}
+      \field{title}{Bot Traffic Report 2016}
+      \field{urlday}{12}
+      \field{urlmonth}{02}
+      \field{urlyear}{2018}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://www.incapsula.com/blog/bot-traffic-report-2016.html
+      \endverb
+    \endentry
+    \entry{def-bot}{online}{}
+      \name{author}{1}{}{%
+        {{hash=a734eef0f7fb537589a3b1d8b2215fdd}{Christensson}{C\bibinitperiod}{Per.}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{a734eef0f7fb537589a3b1d8b2215fdd}
+      \strng{fullhash}{a734eef0f7fb537589a3b1d8b2215fdd}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{14}
+      \field{month}{02}
+      \field{title}{Bot Definition}
+      \field{urlday}{12}
+      \field{urlmonth}{02}
+      \field{urlyear}{2018}
+      \field{year}{2014}
+      \verb{url}
+      \verb https://techterms.com/definition/bot
+      \endverb
+    \endentry
+    \entry{def-spider}{online}{}
+      \name{author}{1}{}{%
+        {{hash=a734eef0f7fb537589a3b1d8b2215fdd}{Christensson}{C\bibinitperiod}{Per.}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{a734eef0f7fb537589a3b1d8b2215fdd}
+      \strng{fullhash}{a734eef0f7fb537589a3b1d8b2215fdd}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Spider Definition}
+      \field{urlday}{12}
+      \field{urlmonth}{02}
+      \field{urlyear}{2018}
+      \field{year}{2006}
+      \verb{url}
+      \verb https://techterms.com/definition/spider
+      \endverb
+    \endentry
+    \entry{ijcsc-web-crawler-overview}{article}{}
+      \name{author}{2}{}{%
+        {{hash=24197483961a1aa71838b95d2c2a6b48}{Dhenakaran}{D\bibinitperiod}{S.S.}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=30e65f9846f3514a131ba5b35bdae9b1}{Sambanthan}{S\bibinitperiod}{K.\bibnamedelimi Thirugnana}{K\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{4c484518aa5ff68da1dcd694b5731942}
+      \strng{fullhash}{4c484518aa5ff68da1dcd694b5731942}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Computer Science and Communication}
+      \field{month}{03}
+      \field{title}{Web Crawler - An Overview}
+      \field{year}{2011}
+      \verb{url}
+      \verb http://csjournals.com/IJCSC/PDF2-1/Article_49.pdf
+      \endverb
+    \endentry
+    \entry{zaehler-webseiten}{online}{}
+      \name{author}{1}{}{%
+        {{hash=509ed81b1cbfea2544bed1f9824e60d6}{Stats}{S\bibinitperiod}{Internet\bibnamedelima Live}{I\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{509ed81b1cbfea2544bed1f9824e60d6}
+      \strng{fullhash}{509ed81b1cbfea2544bed1f9824e60d6}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Total number of Websites}
+      \field{urlday}{17}
+      \field{urlmonth}{02}
+      \field{urlyear}{2018}
+      \verb{url}
+      \verb http://www.internetlivestats.com/
+      \endverb
+      \warn{\item Datamodel: Entry 'zaehler-webseiten' (literaturverzeichnis.bib): Invalid format 'date' of date field 'date' - ignoring}
+    \endentry
+    \entry{googlebot-anzahl-pro-sekunde}{online}{}
+      \name{author}{1}{}{%
+        {{hash=672cf6561f27247e38f56754f51c7e31}{Atwood}{A\bibinitperiod}{Jeff}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{672cf6561f27247e38f56754f51c7e31}
+      \strng{fullhash}{672cf6561f27247e38f56754f51c7e31}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{25}
+      \field{month}{03}
+      \field{title}{Eeeeek where is my slow performance??? [closed]}
+      \field{urlday}{24}
+      \field{urlmonth}{02}
+      \field{urlyear}{2018}
+      \field{year}{2011}
+      \verb{url}
+      \verb https://meta.stackexchange.com/questions/84695/eeeeek-where-is-my-slow-performance/84701#84701
+      \endverb
+    \endentry
+    \entry{durch-seitengroesse}{online}{}
+      \name{author}{1}{}{%
+        {{hash=89cb5c7a473cb6763eed8d0e03409f0b}{Everts}{E\bibinitperiod}{Tammy}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{89cb5c7a473cb6763eed8d0e03409f0b}
+      \strng{fullhash}{89cb5c7a473cb6763eed8d0e03409f0b}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{09}
+      \field{month}{08}
+      \field{title}{The average web page is 3MB. How much should we care?}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://speedcurve.com/blog/web-performance-page-bloat/
+      \endverb
+    \endentry
+    \entry{robots-date}{online}{}
+      \name{author}{1}{}{%
+        {{hash=811e945dc5c3e25e132986b480891518}{Koster}{K\bibinitperiod}{Martijn}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{811e945dc5c3e25e132986b480891518}
+      \strng{fullhash}{811e945dc5c3e25e132986b480891518}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A Standard for Robot Exclusion}
+      \field{urlday}{18}
+      \field{urlmonth}{03}
+      \field{urlyear}{2018}
+      \verb{url}
+      \verb http://www.robotstxt.org/orig.html
+      \endverb
+      \warn{\item Datamodel: Entry 'robots-date' (literaturverzeichnis.bib): Invalid format 'date' of date field 'date' - ignoring}
+    \endentry
+    \entry{robots-martijn}{online}{}
+      \name{author}{1}{}{%
+        {{hash=811e945dc5c3e25e132986b480891518}{Koster}{K\bibinitperiod}{Martijn}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{811e945dc5c3e25e132986b480891518}
+      \strng{fullhash}{811e945dc5c3e25e132986b480891518}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Historical Web Services}
+      \field{year}{2011}
+      \verb{url}
+      \verb http://www.greenhills.co.uk/historical.html
+      \endverb
+    \endentry
+    \entry{statistik-webserver}{online}{}
+      \name{author}{1}{}{%
+        {{hash=6888ef5a3272209b5a214c6ed5f9e1f4}{Surveys}{S\bibinitperiod}{Web\bibnamedelima Technology}{W\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{6888ef5a3272209b5a214c6ed5f9e1f4}
+      \strng{fullhash}{6888ef5a3272209b5a214c6ed5f9e1f4}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{24}
+      \field{month}{03}
+      \field{title}{Usage of web servers for websites}
+      \field{urlday}{24}
+      \field{urlmonth}{03}
+      \field{urlyear}{2018}
+      \field{year}{2018}
+      \verb{url}
+      \verb https://w3techs.com/technologies/overview/web_server/all
+      \endverb
+    \endentry
+    \entry{user-agent-info}{online}{}
+      \name{author}{1}{}{%
+        {{hash=42b1a7c5d1b0e5635cc43fbd3a36ffe1}{Hoffman}{H\bibinitperiod}{Chris}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{42b1a7c5d1b0e5635cc43fbd3a36ffe1}
+      \strng{fullhash}{42b1a7c5d1b0e5635cc43fbd3a36ffe1}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{28}
+      \field{month}{09}
+      \field{title}{What Is a Browser’s User Agent?}
+      \field{urlday}{04}
+      \field{urlmonth}{03}
+      \field{urlyear}{2018}
+      \field{year}{2016}
+      \verb{url}
+      \verb https://www.howtogeek.com/114937/htg-explains-whats-a-browser-user-agent/
+      \endverb
+    \endentry
+    \entry{meta-w3c}{online}{}
+      \name{author}{1}{}{%
+        {{hash=f0c525ab5860a6a4a75c1bd335cd12ec}{Recommendation}{R\bibinitperiod}{W3C}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{f0c525ab5860a6a4a75c1bd335cd12ec}
+      \strng{fullhash}{f0c525ab5860a6a4a75c1bd335cd12ec}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Robots and the META element}
+      \field{urlday}{24}
+      \field{urlmonth}{03}
+      \field{urlyear}{2018}
+      \verb{url}
+      \verb https://www.w3.org/TR/html4/appendix/notes.html#h-B.4.1.2
+      \endverb
+      \warn{\item Datamodel: Entry 'meta-w3c' (literaturverzeichnis.bib): Invalid format 'date' of date field 'date' - ignoring}
+    \endentry
+    \entry{meta-beispiel}{online}{}
+      \name{author}{1}{}{%
+        {{hash=811e945dc5c3e25e132986b480891518}{Koster}{K\bibinitperiod}{Martijn}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{811e945dc5c3e25e132986b480891518}
+      \strng{fullhash}{811e945dc5c3e25e132986b480891518}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{About the Robots <META> tag}
+      \field{urlday}{24}
+      \field{urlmonth}{03}
+      \field{urlyear}{2018}
+      \verb{url}
+      \verb http://www.robotstxt.org/meta.html
+      \endverb
+      \warn{\item Datamodel: Entry 'meta-beispiel' (literaturverzeichnis.bib): Invalid format 'date' of date field 'date' - ignoring}
+    \endentry
+    \entry{acap-was}{online}{}
+      \name{author}{1}{}{%
+        {{hash=c3d1fe48bf4b293af11367f9b13a2253}{Council}{C\bibinitperiod}{International\bibnamedelimb Press\bibnamedelima Telecommunications}{I\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{c3d1fe48bf4b293af11367f9b13a2253}
+      \strng{fullhash}{c3d1fe48bf4b293af11367f9b13a2253}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Solutions to address the challenges of communicating digital rights and permissions}
+      \field{urlday}{24}
+      \field{urlmonth}{03}
+      \field{urlyear}{2018}
+      \verb{url}
+      \verb http://www.the-acap.org/index.php
+      \endverb
+      \warn{\item Datamodel: Entry 'acap-was' (literaturverzeichnis.bib): Invalid format 'date' of date field 'date' - ignoring}
+    \endentry
+    \entry{acap-google}{online}{}
+      \name{author}{1}{}{%
+        {{hash=362599d74c2da75480a23ccdd7f4ce96}{iTWire}{i\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{362599d74c2da75480a23ccdd7f4ce96}
+      \strng{fullhash}{362599d74c2da75480a23ccdd7f4ce96}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{18}
+      \field{month}{03}
+      \field{title}{ACAP content protection protocol "doesn't work" says Google CEO}
+      \field{urlday}{24}
+      \field{urlmonth}{03}
+      \field{urlyear}{2018}
+      \field{year}{2008}
+      \verb{url}
+      \verb https://www.itwire.com/your-it-news/home-it/17206-acap-content-protection-protocol-qdoesnt-workq-says-google-ceo
+      \endverb
+    \endentry
+    \entry{google-marktanteil}{online}{}
+      \name{author}{1}{}{%
+        {{hash=d39c4dff1ddc823b869dfa12bd366200}{lunapark}{l\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{d39c4dff1ddc823b869dfa12bd366200}
+      \strng{fullhash}{d39c4dff1ddc823b869dfa12bd366200}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{11}
+      \field{month}{12}
+      \field{title}{Suchmaschinenmarktanteile weltweit 2017}
+      \field{urlday}{25}
+      \field{urlmonth}{03}
+      \field{urlyear}{2018}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://www.luna-park.de/blog/9907-suchmaschinen-marktanteile-weltweit-2014/
+      \endverb
+    \endentry
+    \entry{googlebot-googleconsole}{online}{}
+      \name{author}{1}{}{%
+        {{hash=8b36e9207c24c76e6719268e49201d94}{Google}{G\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhash}{8b36e9207c24c76e6719268e49201d94}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Googlebot}
+      \field{urlday}{25}
+      \field{urlmonth}{03}
+      \field{urlyear}{2018}
+      \verb{url}
+      \verb https://support.google.com/webmasters/answer/182072?hl=de
+      \endverb
+      \warn{\item Datamodel: Entry 'googlebot-googleconsole' (literaturverzeichnis.bib): Invalid format 'date' of date field 'date' - ignoring}
+    \endentry
+    \entry{was-ist-indexieren}{online}{}
+      \name{author}{1}{}{%
+        {{hash=282aa25979bdea674e2e17fb871a110e}{Zimmermann}{Z\bibinitperiod}{Robert}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{282aa25979bdea674e2e17fb871a110e}
+      \strng{fullhash}{282aa25979bdea674e2e17fb871a110e}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{18}
+      \field{month}{04}
+      \field{title}{Crawling und Indexierung von Webseiten: Theorie und Praxis}
+      \field{urlday}{04}
+      \field{urlmonth}{04}
+      \field{urlyear}{2018}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://www.more-fire.com/blog/crawling-und-indexierung-von-webseiten-theorie-und-praxis/
+      \endverb
+    \endentry
+    \entry{googlebot-facts-percentage}{online}{}
+      \name{author}{1}{}{%
+        {{hash=54c5ec3c612b219faf56c3ce405219c9}{Gaffan}{G\bibinitperiod}{Marc}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{54c5ec3c612b219faf56c3ce405219c9}
+      \strng{fullhash}{54c5ec3c612b219faf56c3ce405219c9}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{21}
+      \field{month}{08}
+      \field{title}{Top 10 Bots You Should Know About}
+      \field{urlday}{25}
+      \field{urlmonth}{03}
+      \field{urlyear}{2018}
+      \field{year}{2012}
+      \verb{url}
+      \verb https://www.incapsula.com/blog/know-your-top-10-bots.html
+      \endverb
+    \endentry
+    \entry{googlebot-user-agent}{online}{}
+      \name{author}{1}{}{%
+        {{hash=8b36e9207c24c76e6719268e49201d94}{Google}{G\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhash}{8b36e9207c24c76e6719268e49201d94}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Google-Crawler}
+      \field{urlday}{25}
+      \field{urlmonth}{03}
+      \field{urlyear}{2018}
+      \verb{url}
+      \verb https://support.google.com/webmasters/answer/1061943?hl=de
+      \endverb
+      \warn{\item Datamodel: Entry 'googlebot-user-agent' (literaturverzeichnis.bib): Invalid format 'date' of date field 'date' - ignoring}
+    \endentry
+    \entry{googlebot-facts-incapsula}{online}{}
+      \name{author}{1}{}{%
+        {{hash=009ce1a1e218841e9fa7422f23d8fdb8}{Zeifman}{Z\bibinitperiod}{Igal}{I\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{009ce1a1e218841e9fa7422f23d8fdb8}
+      \strng{fullhash}{009ce1a1e218841e9fa7422f23d8fdb8}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{24}
+      \field{month}{07}
+      \field{title}{Mr. Hack: Googlebot’s Unruly Alter Ego}
+      \field{year}{2014}
+      \verb{url}
+      \verb https://www.incapsula.com/blog/googlebot-study-mr-hack.html
+      \endverb
+    \endentry
+    \entry{gallenbacher-iso-osi}{book}{}
+      \name{author}{1}{}{%
+        {{hash=4b097ae7b02f005c9a1fb26bc0c33150}{Gallenbacher}{G\bibinitperiod}{Jens}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{4b097ae7b02f005c9a1fb26bc0c33150}
+      \strng{fullhash}{4b097ae7b02f005c9a1fb26bc0c33150}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{4}
+      \field{isbn}{978-3-662-53964-4}
+      \field{subtitle}{IT zum Anfassen für alle von 9 bis 99 - vom Navi bis Social Media}
+      \field{title}{Abenteuer Internet}
+      \field{year}{2017}
+    \endentry
+    \entry{tarpit-wikipedia}{online}{}
+      \name{author}{1}{}{%
+        {{hash=bbedc4a0e9d0679a208f6d70ffbf4fce}{"Wikipedia"}{"\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{bbedc4a0e9d0679a208f6d70ffbf4fce}
+      \strng{fullhash}{bbedc4a0e9d0679a208f6d70ffbf4fce}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{08}
+      \field{month}{02}
+      \field{title}{Teergrube (Informationstechnik)}
+      \field{urlday}{29}
+      \field{urlmonth}{03}
+      \field{urlyear}{2018}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://de.wikipedia.org/wiki/Teergrube_(Informationstechnik)
+      \endverb
+    \endentry
+    \entry{def-honeybot}{online}{}
+      \name{author}{1}{}{%
+        {{hash=44326f7834c0d75d047e2d31142578aa}{Christensson}{C\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{44326f7834c0d75d047e2d31142578aa}
+      \strng{fullhash}{44326f7834c0d75d047e2d31142578aa}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{07}
+      \field{month}{09}
+      \field{title}{Honeypot Definition}
+      \field{urlday}{05}
+      \field{urlmonth}{05}
+      \field{urlyear}{2018}
+      \field{year}{2013}
+      \verb{url}
+      \verb https://techterms.com/definition/honeypot
+      \endverb
+    \endentry
+    \entry{honeypot-tarpit-synonym}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b110513e2651be8d4123605c822facb1}{Eggendorfer}{E\bibinitperiod}{Tobias}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b110513e2651be8d4123605c822facb1}
+      \strng{fullhash}{b110513e2651be8d4123605c822facb1}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Linux-Magazin}
+      \field{month}{06}
+      \field{title}{E-Mail-Adressenjägern auf Webseiten eine Falle stellen}
+      \field{year}{2004}
+      \verb{url}
+      \verb http://www.linux-magazin.de/ausgaben/2004/06/ernte-nein-danke/
+      \endverb
+    \endentry
+    \entry{tarpit-smtp}{online}{}
+      \name{author}{1}{}{%
+        {{hash=b8510dfdc84a82d011fb97135b15eaff}{Mitra}{M\bibinitperiod}{Amrita}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b8510dfdc84a82d011fb97135b15eaff}
+      \strng{fullhash}{b8510dfdc84a82d011fb97135b15eaff}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{19}
+      \field{month}{09}
+      \field{subtitle}{How does Tarpit work?}
+      \field{title}{What is Tarpit and how does it improve security ?}
+      \field{urlday}{03}
+      \field{urlmonth}{29}
+      \field{urlyear}{2018}
+      \field{year}{2015}
+      \verb{url}
+      \verb https://computersecuritypgp.blogspot.it/2015/09/what-is-tarit-and-how-it-enhances.html
+      \endverb
+    \endentry
+    \entry{tarpitting-http-linux-mag}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b110513e2651be8d4123605c822facb1}{Eggendorfer}{E\bibinitperiod}{Tobias}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b110513e2651be8d4123605c822facb1}
+      \strng{fullhash}{b110513e2651be8d4123605c822facb1}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Linux Magazin}
+      \field{month}{01}
+      \field{title}{Mit Teergruben aktiv gegen Spammer vorgehen – welche wirken tatsächlich?}
+      \field{year}{2007}
+      \verb{url}
+      \verb http://www.linux-magazin.de/ausgaben/2007/01/her-mit-dem-abfall/
+      \endverb
+    \endentry
+    \entry{tarpitting-http-eggendorf-auugn}{mvproceedings}{}
+      \name{editor}{1}{}{%
+        {{hash=b110513e2651be8d4123605c822facb1}{Eggendorfer}{E\bibinitperiod}{Tobias}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b110513e2651be8d4123605c822facb1}
+      \strng{fullhash}{b110513e2651be8d4123605c822facb1}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{eventtitle}{Stopping Spammers' Harvesters using a HTTP-tar pit - Details on implementation and a real-world experiment}
+      \field{month}{10}
+      \field{subtitle}{AUUG 2005}
+      \field{title}{The Conference for Unix, Linux and Open Source Professionals}
+      \field{urlday}{29}
+      \field{urlmonth}{03}
+      \field{urlyear}{2018}
+      \field{year}{2005}
+      \verb{url}
+      \verb https://books.google.it/books?id=iJw5zAu7LncC&pg=PA68&lpg=PA68&dq=http+tarpit&source=bl&ots=DNAI72u8Fa&sig=qBLDp--ttBS-RD3p0G1b89gSJew&hl=de&sa=X&ved=0ahUKEwjnqOe7oJHaAhWKiaYKHT2sAGEQ6AEIggEwCQ#v=onepage&q=http%20tarpit&f=false
+      \endverb
+    \endentry
+    \entry{http-header-time}{online}{}
+      \name{author}{1}{}{%
+        {{hash=374d51acce74198ab6e1b854a613ac91}{docs}{d\bibinitperiod}{MDN}{M\bibinitperiod}{web}{w\bibinitperiod}{}{}}%
+      }
+      \list{organization}{1}{%
+        {Mozilla}%
+      }
+      \strng{namehash}{374d51acce74198ab6e1b854a613ac91}
+      \strng{fullhash}{374d51acce74198ab6e1b854a613ac91}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{24}
+      \field{month}{07}
+      \field{subtitle}{Syntax}
+      \field{title}{Last-Modified}
+      \field{urlday}{02}
+      \field{urlmonth}{04}
+      \field{urlyear}{2018}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Last-Modified
+      \endverb
+    \endentry
+    \entry{wordpress-verbreitung}{online}{}
+      \name{author}{1}{}{%
+        {{hash=62182ca58a739daa8ddd8a48b7b19abb}{Statista}{S\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{62182ca58a739daa8ddd8a48b7b19abb}
+      \strng{fullhash}{62182ca58a739daa8ddd8a48b7b19abb}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{01}
+      \field{title}{Ranking der 10 Content-Management-Systeme (CMS) weltweit nach Marktanteil im Januar 2018}
+      \field{urlday}{03}
+      \field{urlmonth}{04}
+      \field{urlyear}{2018}
+      \field{year}{2018}
+      \verb{url}
+      \verb https://de.statista.com/statistik/daten/studie/320670/umfrage/marktanteile-der-content-management-systeme-cms-weltweit/
+      \endverb
+    \endentry
+    \entry{dotmic}{online}{}
+      \name{author}{1}{}{%
+        {{hash=aa61c4ee11faa3e5cd29bb67ced3d157}{crunchbase}{c\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{aa61c4ee11faa3e5cd29bb67ced3d157}
+      \strng{fullhash}{aa61c4ee11faa3e5cd29bb67ced3d157}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Dotmic}
+      \field{urlday}{04}
+      \field{urlmonth}{04}
+      \field{urlyear}{2018}
+      \verb{url}
+      \verb https://www.crunchbase.com/organization/dotmic#section-overview
+      \endverb
+      \warn{\item Datamodel: Entry 'dotmic' (literaturverzeichnis.bib): Invalid format 'date' of date field 'date' - ignoring}
+    \endentry
+    \entry{dotbot}{online}{}
+      \name{author}{1}{}{%
+        {{hash=401e70779b937a5b61f2f5ff17ebed3a}{networks}{n\bibinitperiod}{}{}{distil}{d\bibinitperiod}{}{}}%
+      }
+      \strng{namehash}{401e70779b937a5b61f2f5ff17ebed3a}
+      \strng{fullhash}{401e70779b937a5b61f2f5ff17ebed3a}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{DotBot/1.1 User Agent String}
+      \field{urlday}{04}
+      \field{urlmonth}{04}
+      \field{urlyear}{2018}
+      \verb{url}
+      \verb https://www.distilnetworks.com/bot-directory/bot/dotbot1-1/
+      \endverb
+      \warn{\item Datamodel: Entry 'dotbot' (literaturverzeichnis.bib): Invalid format 'date' of date field 'date' - ignoring}
+    \endentry
+    \entry{gewinnerbrief-admin-dealer}{online}{}
+      \name{author}{1}{}{%
+        {{hash=ed3c5764e81a0d8d4533317ac59d3156}{Brück}{B\bibinitperiod}{Sebastian}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{ed3c5764e81a0d8d4533317ac59d3156}
+      \strng{fullhash}{ed3c5764e81a0d8d4533317ac59d3156}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{09}
+      \field{month}{06}
+      \field{title}{OFFIZIELLEGEWINNER BRIEF VON INTERNACIONALE LOTTO COMMISSION (ADMIN@DEALER.COM)}
+      \field{urlday}{11}
+      \field{urlmonth}{04}
+      \field{urlyear}{2018}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://vorsicht-email.de/beitrag/2017/06/09/offiziellegewinner-brief-von-internacionale-lotto-commission-admindealer-com/
+      \endverb
+    \endentry
+    \entry{scam-warnung-wolseley}{online}{}
+      \name{author}{1}{}{%
+        {{hash=f9b43cee93b0a9cdd3c20158f19951c3}{Group}{G\bibinitperiod}{Wolseley\bibnamedelima Industrial}{W\bibinitperiod\bibinitdelim I\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{f9b43cee93b0a9cdd3c20158f19951c3}
+      \strng{fullhash}{f9b43cee93b0a9cdd3c20158f19951c3}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{22}
+      \field{month}{03}
+      \field{title}{Notice: Malicious Email Scam}
+      \field{urlday}{11}
+      \field{urlmonth}{04}
+      \field{urlyear}{2018}
+      \field{year}{2018}
+      \verb{url}
+      \verb http://wolseleyindustrialgroup.com/news/notice-malicious-email-scam/
+      \endverb
+    \endentry
+    \entry{vorschussbetrug}{online}{}
+      \name{author}{1}{}{%
+        {{hash=c41d9f7c893468ab2e2e5b34f37c35bf}{simplepedia}{s\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{c41d9f7c893468ab2e2e5b34f37c35bf}
+      \strng{fullhash}{c41d9f7c893468ab2e2e5b34f37c35bf}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{28}
+      \field{month}{01}
+      \field{title}{Vorschussbetrug}
+      \field{urlday}{11}
+      \field{urlmonth}{04}
+      \field{urlyear}{2018}
+      \field{year}{2016}
+      \verb{url}
+      \verb https://www.scambaiter-forum.info/wiki:vorschussbetrug
+      \endverb
+    \endentry
+    \entry{firefox-versions}{online}{}
+      \name{author}{1}{}{%
+        {{hash=502f1bd97b0e7d80b88e1f45ae1bfdb8}{Mozilla}{M\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{502f1bd97b0e7d80b88e1f45ae1bfdb8}
+      \strng{fullhash}{502f1bd97b0e7d80b88e1f45ae1bfdb8}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Firefox Releases}
+      \field{urlday}{14}
+      \field{urlmonth}{04}
+      \field{urlyear}{2018}
+      \verb{url}
+      \verb https://www.mozilla.org/en-US/firefox/releases/
+      \endverb
+      \warn{\item Datamodel: Entry 'firefox-versions' (literaturverzeichnis.bib): Invalid format 'date' of date field 'date' - ignoring}
+    \endentry
+    \entry{firefox-40-1}{online}{}
+      \name{author}{1}{}{%
+        {{hash=332cf085077784b09124a86bf5f92e53}{Haroldoland}{H\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{332cf085077784b09124a86bf5f92e53}
+      \strng{fullhash}{332cf085077784b09124a86bf5f92e53}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{16}
+      \field{month}{02}
+      \field{title}{Firefox 40.1 and WordPress attacks}
+      \field{urlday}{14}
+      \field{urlmonth}{04}
+      \field{urlyear}{2018}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://haroldoland.blogspot.it/2017/02/firefox-401-and-wordpress-attacks.html
+      \endverb
+    \endentry
+    \entry{wordpress-botnetz}{online}{}
+      \name{author}{1}{}{%
+        {{hash=080e9246bc110229d498f514b368cf7d}{Maunder}{M\bibinitperiod}{Mark}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{080e9246bc110229d498f514b368cf7d}
+      \strng{fullhash}{080e9246bc110229d498f514b368cf7d}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{11}
+      \field{month}{04}
+      \field{title}{Thousands of Hacked Home Routers are Attacking WordPress Sites}
+      \field{urlday}{14}
+      \field{urlmonth}{04}
+      \field{urlyear}{2018}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://www.wordfence.com/blog/2017/04/home-routers-attacking-wordpress/
+      \endverb
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+
