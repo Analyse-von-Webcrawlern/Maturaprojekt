@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="assets/css/Timeline.css">
 
 
-  <link rel="stylesheet" href="hhttps://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
 
   <!--Google Analytics-->
   <script>
@@ -40,15 +40,7 @@
   </script>
 
 
-  <script>
-    $(document).ready( function () {
-      $('#table_id').DataTable( {
-        "processing": true,
-        "serverSide": true,
-        "ajax": "generating-table.php"
-    } );
-    } );
-  </script>
+
 </head>
 
 <body>
@@ -88,6 +80,16 @@
     <script src="assets/js/-Animated-numbers-section-BS4-.js"></script>
     <script src="assets/js/bs-animation.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+
+    <script>
+      $(document).ready( function () {
+        $('#table_id').DataTable( {
+          "processing": true,
+          "serverSide": true,
+          "ajax": "generating-table.php"
+      } );
+      } );
+    </script>
 </body>
 
 </html>
