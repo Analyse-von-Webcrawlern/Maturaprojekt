@@ -47,7 +47,7 @@
 
 
 
-  <table id="table_id" class="display">
+  <table id="tableid" class="display">
     <thead>
       <tr>
         <th>Column 1</th>
@@ -83,11 +83,12 @@
 
     <script>
       $(document).ready( function () {
-        $('#table_id').DataTable( {
+        $("tableid").DataTable();
+        /*$('#tableid').DataTable( {
           "processing": true,
           "serverSide": true,
           "ajax": "generating-table.php"
-      } );
+        } );*/
       } );
     </script>
 </body>
