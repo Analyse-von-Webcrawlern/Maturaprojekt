@@ -109,7 +109,7 @@
                                 <h2 class="number-description">Anzahl der generierten "virtuellen Dateien"</h2>
                             </div>
                             <div class="col-12 col-sm-6 col-lg-4 pt-5">
-                                <p class="m-0"><i class="far fa-clock fa-2x" aria-hidden="true"></i></p>
+                                <p class="m-0"><i class="fa fa-clock-o fa-2x" aria-hidden="true"></i></p>
                                 <p class="m-0 display-4">
                                   <span class="nbanimate countingnumber">
                                     <?php
