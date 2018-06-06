@@ -42,7 +42,7 @@
 
   <script>
     $(document).ready( function () {
-      $('#example').DataTable( {
+      $('#table_id').DataTable( {
         "processing": true,
         "serverSide": true,
         "ajax": "generating-table.php"
