@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="assets/css/Timeline.css">
 
 
-  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css"/>
 
   <!--Google Analytics-->
   <script>
@@ -50,19 +50,33 @@
   <table id="tableid" class="display">
     <thead>
       <tr>
-        <th>Column 1</th>
-        <th>Column 2</th>
+        <th>IP-Adresse</th>
+        <th>Datum</th>
+        <th>Benutzername</th>
+        <th>Passwort</th>
+        <th>Wordpress</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>Row 1 Data 1</td>
-        <td>Row 1 Data 2</td>
-      </tr>
-      <tr>
-        <td>Row 2 Data 1</td>
-        <td>Row 2 Data 2</td>
-      </tr>
+      <?php
+        include 'connect-database.php';
+
+        $statement = "SELECT * FROM failedlogins";
+        $result = $mysqli->query($statement);
+        while ($row = $result->fetch_assoc()) {
+          echo "<tr>";
+            echo "<td>".$row["ip"]."</td>";
+            echo "<td>".$row["datum"]."</td>";
+            echo "<td>".$row["benutzername"]."</td>";
+            echo "<td>".$row["passwort"]."</td>";
+            if ($row["ip"] == 1) {
+              echo "<td>JA</td>";
+            }else {
+              echo "<td>NEIN</td>";
+            }
+          echo "</tr>";
+        }
+      ?>
     </tbody>
   </table>
 
@@ -72,7 +86,7 @@
         <h1 class="title"><a href="index.html" class="home-link">VEVETA<br></a></h1>
     </div>
 
-    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -81,16 +95,11 @@
     <script src="assets/js/bs-animation.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
 
-    <script>
-      $(document).ready( function () {
-        $("tableid").DataTable();
-        /*$('#tableid').DataTable( {
-          "processing": true,
-          "serverSide": true,
-          "ajax": "generating-table.php"
-        } );*/
-      } );
-    </script>
+    <script type="text/javascript">
+  		$(document).ready(function() {
+  			//$('#tableid').DataTable();
+  		});
+	   </script>
 </body>
 
 </html>
