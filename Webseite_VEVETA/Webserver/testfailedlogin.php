@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="assets/css/Timeline.css">
 
 
-  <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css"/> -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css"/>
 
   <!--Google Analytics-->
   <script>
@@ -47,7 +47,7 @@
 
 
 
-  <table id="tableid" class="table">
+  <table id="tableid" class="display" style="display:none;">
     <thead>
       <tr>
         <th>IP-Adresse</th>
@@ -101,6 +101,7 @@
     <script type="text/javascript">
   		$(document).ready(function() {
   			$('#tableid').DataTable();
+        $('#tableid').css("display","block");
   		});
 	   </script>
 </body>
