@@ -25,7 +25,8 @@
   <link rel="stylesheet" href="assets/css/Timeline.css">
 
 
-  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css"/>
+  <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css"/> -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap4.min.css"/>
 
   <!--Google Analytics-->
   <script>
@@ -47,7 +48,7 @@
 
 
 
-  <table id="failedlogins" class="display" style="display:none;">
+  <table id="failedlogins" class="table table-responsive table-striped table-bordered">
     <thead>
       <tr>
         <th>IP-Adresse</th>
@@ -110,7 +111,7 @@
             "infoFiltered": "(von _MAX_ Datensätzen herausgefiltert)"
         }
         } );
-        $('#failedlogins').css("display","block");
+        //$('#failedlogins').css("display","block");
   		});
 	   </script>
 </body>
