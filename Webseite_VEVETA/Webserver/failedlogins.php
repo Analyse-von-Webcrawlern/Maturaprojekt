@@ -24,6 +24,9 @@
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="stylesheet" href="assets/css/Timeline.css">
 
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css"/>
+
   <!--Google Analytics-->
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -35,139 +38,74 @@
            ga('send', 'pageview');
 
   </script>
+
+
+
 </head>
 
 <body>
-    <div class="container container-content">
-        <div class="row">
-            <div class="col-12">
-                <h2 class="text-center subtitle-no-tranform">Logfiles</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <h3 class="text-center subsubtitle">Logfiles</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <form>
-                    <div class="form-row">
-                        <div class="col-6">
-                            <div class="form-group"><input class="form-control" type="date" id="date-from"><label for="date-from">Startdatum</label></div>
-                        </div>
-                        <div class="col-6">
-                            <div class="form-group"><input class="form-control" type="date" id="date-end"><label for="date-end">Enddatum</label></div>
-                        </div>
-                        <div class="col-6">
-                            <div class="form-group"><input class="form-control" type="text" placeholder="Suchbegriff..." id="sucheAllg"><label for="sucheAllg">Allgemeine Suche (IP-Adresse, User-Agent, etc.)</label></div>
-                        </div>
-                        <div class="col-6">
-                            <div class="form-group">
-                                <div class="form-check"><input class="form-check-input" type="checkbox" checked="" id="googlebot"><label class="form-check-label" for="googlebot" id="googlebot">GoogleBot ausblenden</label></div>
-                                <div class="form-check"><input class="form-check-input" type="checkbox" checked="" id="dotbot"><label class="form-check-label" for="dotbot">DotBot ausblenden</label></div>
-                            </div>
-                        </div>
-                        <div class="col-12"><button class="btn btn-primary btn-block" type="submit"><i class="fa fa-filter"></i>&nbsp;Filtern</button></div>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <div class="row">
-                    <div class="col-12">
-                        <form>
-                            <div class="form-row">
-                                <div class="col-12">
-                                    <div class="form-group"><input class="form-control" type="text" placeholder="Abfrage (SELECT * FROM)" id="query"><label for="query">Eigene Abfrage</label>
-                                        <p class="text-danger">Achtung: Die Abfrage ist nur auf SELECT-Abfragen beschränkt und lässe keine DROP, DELETE, INSERT, UPDATE, CREATE etc. Abfragen zu!</p>
-                                    </div>
-                                </div>
-                                <div class="col-12"><button class="btn btn-primary btn-block" type="submit"><i class="fa fa-database"></i>&nbsp;Abfrage ausführen</button></div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <h3 class="text-center subsubtitle">Logfiles</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="table-responsive table-bordered">
-                    <table class="table table-striped table-bordered table-hover">
-                        <thead>
-                            <tr>
-                                <th>IP-Adresse</th>
-                                <th>Datum</th>
-                                <th>Zeit</th>
-                                <th>Methode</th>
-                                <th>Angefragte Datei</th>
-                                <th>Protokoll</th>
-                                <th>Statuscode</th>
-                                <th>Gesendete Bytes</th>
-                                <th>Referring Site</th>
-                                <th>User-Agent</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Cell 1</td>
-                                <td>Cell 2</td>
-                                <td>Text</td>
-                                <td>Text</td>
-                                <td>Text</td>
-                                <td>Text</td>
-                                <td>Text</td>
-                                <td>Text</td>
-                                <td>Text</td>
-                                <td>Text</td>
-                            </tr>
-                            <tr>
-                                <td>Cell 1</td>
-                                <td>Cell 2</td>
-                                <td>Text</td>
-                                <td>Text</td>
-                                <td>Text</td>
-                                <td>Text</td>
-                                <td>Text</td>
-                                <td>Text</td>
-                                <td>Text</td>
-                                <td>Text</td>
-                            </tr>
-                            <tr>
-                                <td>Cell 1</td>
-                                <td>Cell 2</td>
-                                <td>Text</td>
-                                <td>Text</td>
-                                <td>Text</td>
-                                <td>Text</td>
-                                <td>Text</td>
-                                <td>Text</td>
-                                <td>Text</td>
-                                <td>Text</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col"><a class="btn btn-primary btn-block back-button" role="button" href="index.html">Zur Startseite</a></div>
-        </div>
-    </div>
+
+
+
+  <table id="failedlogins" class="display" style="display:none;">
+    <thead>
+      <tr>
+        <th>IP-Adresse</th>
+        <th>Datum</th>
+        <th>Benutzername</th>
+        <th>Passwort</th>
+        <th>Wordpress</th>
+      </tr>
+    </thead>
+    <tbody>
+      <?php
+        include 'connect-database.php';
+
+        $statement = "SELECT * FROM failedlogins";
+        $result = $mysqli->query($statement);
+        while ($row = $result->fetch_assoc()) {
+          echo "<tr>";
+            echo "<td>".$row["ip"]."</td>";
+            echo "<td>".$row["datum"]."</td>";
+            echo "<td>".$row["benutzername"]."</td>";
+            echo "<td>".$row["passwort"]."</td>";
+            if ($row["ip"] == "1") {
+              echo "<td>JA</td>";
+            }else {
+              echo "<td>NEIN</td>";
+            }
+          echo "</tr>";
+        }
+      ?>
+    </tbody>
+  </table>
+
+
+
     <div id="top-left">
         <h1 class="title"><a href="index.html" class="home-link">VEVETA<br></a></h1>
     </div>
+
+
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/-Animated-numbers-section-BS4-.js"></script>
     <script src="assets/js/bs-animation.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+
+
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
+
+    <script type="text/javascript">
+  		$(document).ready(function() {
+        $('#failedlogins').DataTable( {
+          "order": [[ 1, "desc" ]]
+        } );
+        $('#failedlogins').css("display","block");
+  		});
+	   </script>
 </body>
 
 </html>

@@ -100,7 +100,9 @@
 
     <script type="text/javascript">
   		$(document).ready(function() {
-  			$('#tableid').DataTable();
+        $('#tableid').DataTable( {
+          "order": [[ 1, "desc" ]]
+        } );
         $('#tableid').css("display","block");
   		});
 	   </script>
