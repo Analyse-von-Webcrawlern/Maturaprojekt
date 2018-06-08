@@ -86,7 +86,7 @@
         <h1 class="title"><a href="index.html" class="home-link">VEVETA<br></a></h1>
     </div>
 
-    <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
+
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -95,9 +95,12 @@
     <script src="assets/js/bs-animation.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
 
+
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
+
     <script type="text/javascript">
   		$(document).ready(function() {
-  			//$('#tableid').DataTable();
+  			$('#tableid').DataTable();
   		});
 	   </script>
 </body>
