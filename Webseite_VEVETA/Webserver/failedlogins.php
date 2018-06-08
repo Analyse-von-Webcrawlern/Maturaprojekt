@@ -101,7 +101,14 @@
     <script type="text/javascript">
   		$(document).ready(function() {
         $('#failedlogins').DataTable( {
-          "order": [[ 1, "desc" ]]
+          "order": [[ 1, "desc" ]],
+          "language": {
+            "lengthMenu": "_MENU_ Einträge pro Seite",
+            "zeroRecords": "Die Suche trifft auf keinen Datensatz zu",
+            "info": "Seite _PAGE_ von _PAGES_",
+            "infoEmpty": "Keine Datensätze vorhanden",
+            "infoFiltered": "(von _MAX_ Datensätzen herausgefiltert)"
+        }
         } );
         $('#failedlogins').css("display","block");
   		});
