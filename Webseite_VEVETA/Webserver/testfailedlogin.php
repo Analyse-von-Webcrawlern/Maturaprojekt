@@ -69,7 +69,7 @@
             echo "<td>".$row["datum"]."</td>";
             echo "<td>".$row["benutzername"]."</td>";
             echo "<td>".$row["passwort"]."</td>";
-            if ($row["ip"] == 1) {
+            if ($row["ip"] == "1") {
               echo "<td>JA</td>";
             }else {
               echo "<td>NEIN</td>";
