@@ -1,6 +1,5 @@
-function addspinn(element) {
-  $(element).children().addClass("fa-spin");
-  $(element).children().css( "color", "red" );
-
+function addspinn() {
+  $("#outer-maxi-spinner").css("z-index",99);
+  $("#maxi-spinner").css("display","");
   location.reload();
 }

@@ -54,10 +54,11 @@
 
 
   //virtuelle dateien letzte
-  $statement = "SELECT TIMESTAMPDIFF(MINUTE,letzte,now()) AS diff from virtuelle_dateien; ";
+  $statement = "SELECT TIMESTAMPDIFF(MINUTE,letzte,now()) AS diff, TIME(letzte) AS timewhen from virtuelle_dateien; ";
   $result = $mysqli->query($statement);
   $row = $result->fetch_assoc();
   $virtuelleDLetzte = $row["diff"];
+  $virtuelleDLetzteZeit = $row["timewhen"];
 
   //failed login
   $statement = "SELECT count(id) AS 'anzahl' FROM failedlogins";
@@ -118,7 +119,7 @@
                                   </span>
                                 </p>
                                 <hr class="hr-white">
-                                <h2 class="number-description">Und so viel waren es heute<br />(die Letzte vor <?php echo $virtuelleDLetzte?> Minuten)</h2>
+                                <h2 class="number-description">Und so viel waren es heute<br />(die Letzte vor <?php echo $virtuelleDLetzte?> Minuten, <?php echo $virtuelleDLetzteZeit?>)</h2>
                             </div>
                             <div class="col-12 col-sm-6 col-lg-4 pt-5">
                                 <p class="m-0"><i class="fa fa-lock fa-2x" aria-hidden="true"></i></p>
@@ -158,7 +159,7 @@
                                 <h2 class="number-description">also fast 100%</h2>
                             </div>
                         </div>
-                        <button class="btn btn-primary btn-block refresh" type="button" onClick="addspinn(this)"><i class="fa fa-refresh"></i>&nbsp;Refresh</button></div>
+                        <button class="btn btn-primary btn-block refresh" type="button" onClick="addspinn()"><i class="fa fa-refresh"></i>&nbsp;Refresh</button></div>
                 </section>
             </div>
         </div>
