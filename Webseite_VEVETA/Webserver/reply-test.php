@@ -179,7 +179,7 @@
               $mail = $mail . "-";
               $mail = $mail . $f_contents[rand(0, count($f_contents) - 1)];
               //http://www.freedatagenerator.com/csv-data-generator
-              $c .= '<a href="mailto:'.$mail.'">Send Me A Mail</a>';
+              $c .= '<a href="mailto:'.$mail.'" style="color: red;">Send Me A Mail</a>';
             }
           }else{
 
@@ -219,9 +219,6 @@
       return $c;
     }
 
-
-
-
     function generateTarget($linklaenge = 0){
       global $buchstaben;
       $t = "";
@@ -232,20 +229,10 @@
       return $t;
     }
 
-
-
-
-
-
-
     if(strpos($_SERVER["REQUEST_URI"], 'wp-admin') !== false){
       header("Location: http://maturaprojekt.ddns.net/wp-login.php");
       die();
     }
-
-
-
-
   ?>
 
 
@@ -261,31 +248,31 @@
         <div class="row">
             <div class="col-4">
                 <h3>
-                  <?php echo generateHeader(10); ?>
+                  <?php echo generateHeader(35); ?>
                   <hr />
                 </h3>
                 <p class="text-content generated-text">
                   <?php echo generateColumn(rand(MINCOLUMNLENGHT,MAXCOLUMNLENGHT)); ?>
                 </p>
             </div>
-            <div class="col-4">
+            <!-- <div class="col-4">
                 <h3>
-                  <?php echo generateHeader(10); ?>
+                  <?php /*echo generateHeader(10);*/ ?>
                   <hr />
                 </h3>
                 <p class="text-content">
-                  <?php echo generateColumn(rand(MINCOLUMNLENGHT,MAXCOLUMNLENGHT)); ?>
+                  <?php /*echo generateColumn(rand(MINCOLUMNLENGHT,MAXCOLUMNLENGHT));*/ ?>
                 </p>
             </div>
             <div class="col-4">
                 <h3>
-                  <?php echo generateHeader(10); ?>
+                  <?php /*echo generateHeader(10);*/ ?>
                   <hr />
                 </h3>
                 <p class="text-content">
-                  <?php echo generateColumn(rand(MINCOLUMNLENGHT,MAXCOLUMNLENGHT)); ?>
+                  <?php /*echo generateColumn(rand(MINCOLUMNLENGHT,MAXCOLUMNLENGHT));*/ ?>
                 </p>
-            </div>
+            </div> -->
         </div>
         <div class="row">
             <div class="col"><a class="btn btn-primary btn-block back-button" role="button" href="index.html">Zur Startseite</a></div>
