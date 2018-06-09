@@ -74,6 +74,7 @@
       "y","y","Y","Y",																							//y	1.974%
       "z","Z"																										//z	0.074%
       );
+
     for ($i=0; $i < 5 ; $i++) {
       $buchstaben[] = "the";
       $buchstaben[] = "be";
@@ -108,6 +109,13 @@
     for ($i=0; $i < 50 ; $i++) {
       $buchstaben[] = " ";
     }
+
+    if (isset($buchstabe)) {
+      echo "jo";
+    }else {
+      echo "na";
+    }
+
     flush();
 
 
