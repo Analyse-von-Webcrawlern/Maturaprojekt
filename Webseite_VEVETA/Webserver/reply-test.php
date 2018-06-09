@@ -246,33 +246,33 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12">
+            <div class="col-4">
                 <h3>
-                  <?php echo generateHeader(35); ?>
+                  <?php echo generateHeader(10); ?>
                   <hr />
                 </h3>
-                <p class="text-content generated-text">
+                <p class="text-content generated-text text-justify">
                   <?php echo generateColumn(rand(MINCOLUMNLENGHT,MAXCOLUMNLENGHT)); ?>
-                </p>
-            </div>
-            <!-- <div class="col-4">
-                <h3>
-                  <?php /*echo generateHeader(10);*/ ?>
-                  <hr />
-                </h3>
-                <p class="text-content">
-                  <?php /*echo generateColumn(rand(MINCOLUMNLENGHT,MAXCOLUMNLENGHT));*/ ?>
                 </p>
             </div>
             <div class="col-4">
                 <h3>
-                  <?php /*echo generateHeader(10);*/ ?>
+                  <?php echo generateHeader(10); ?>
                   <hr />
                 </h3>
-                <p class="text-content">
-                  <?php /*echo generateColumn(rand(MINCOLUMNLENGHT,MAXCOLUMNLENGHT));*/ ?>
+                <p class="text-content text-justify">
+                  <?php echo generateColumn(rand(MINCOLUMNLENGHT,MAXCOLUMNLENGHT)); ?>
                 </p>
-            </div> -->
+            </div>
+            <div class="col-4">
+                <h3>
+                  <?php echo generateHeader(10); ?>
+                  <hr />
+                </h3>
+                <p class="text-content text-justify">
+                  <?php echo generateColumn(rand(MINCOLUMNLENGHT,MAXCOLUMNLENGHT)); ?>
+                </p>
+            </div>
         </div>
         <div class="row">
             <div class="col"><a class="btn btn-primary btn-block back-button" role="button" href="index.html">Zur Startseite</a></div>
