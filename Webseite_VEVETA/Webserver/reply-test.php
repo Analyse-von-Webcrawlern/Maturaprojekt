@@ -172,7 +172,7 @@
               $target .= generateTarget($linklaenge);
               $target = str_replace(" ", "-", $target);
 
-              $c .= '<a href="mailto:'.$target.'@maturaprojekt.ddns.net">'.$target.'@maturaprojekt.ddns.net</a>';
+              $c .= '<a href="mailto:'.$target.'@maturaprojekt.ddns.net"> '.$target.'@maturaprojekt.ddns.net </a>';
             }else{
               $f_contents = file("mailinglist.txt");
               $mail = $date->getTimestamp();
@@ -189,11 +189,11 @@
 
             $ending = rand(0,4);
             if ($ending == 0) {
-              $target .= '.htm">';
+              $target .= '.htm"> ';
             }elseif ($ending == 1) {
-              $target .= '.php">';
+              $target .= '.php"> ';
             }else{
-              $target .= '.html">';
+              $target .= '.html"> ';
             }
 
             $generatedLink .= $target;
@@ -202,7 +202,7 @@
               $generatedLink .= $buchstaben[rand(0,count($buchstaben)-1)];
             }
 
-            $generatedLink .= '</a>';
+            $generatedLink .= ' </a> ';
             $c .= $generatedLink;
 
             //writeGeneratedLinks($target);
@@ -251,7 +251,7 @@
                   <?php echo generateHeader(10); ?>
                   <hr />
                 </h3>
-                <p class="text-content generated-text text-justify">
+                <p class="text-content text-justify">
                   <?php echo generateColumn(rand(MINCOLUMNLENGHT,MAXCOLUMNLENGHT)); ?>
                 </p>
             </div>
