@@ -47,32 +47,32 @@
 
 
     $buchstaben = array(
-      "a","a","a","a","a","a","a","a","a","A","A","A","A","A","A","A","A","A",									//a --> 8.167% --> 9x
-      "b","b","B","B",																							//b --> 1.492% --> 2x
-      "c","c","c","C","C","C",																					//c	2.782%
-      "d","d","d","d","d","D","D","D","D","D",																	//d	4.253%
-      "e","e","e","e","e","e","e","e","e","e","e","e","e","E","E","E","E","E","E","E","E","E","E","E","E","E",	//e	12.702%
-      "f","f","f","F","F","F",																					//f	2.228%
-      "g","g","g","G","G","G",																					//g	2.015%
-      "h","h","h","h","h","h","h","H","H","H","H","H","H","H",													//h	6.094%
-      "i","i","i","i","i","i","i","i","i","i","i","i","i","i",													//i	6.966%
-      "j","J",																									//j	0.153%
-      "k","K",																									//k	0.772%
-      "l","l","l","l","l","L","L","L","L","L",																	//l	4.025%
-      "m","m","m","M","M","M",																					//m	2.406%
-      "n","n","n","n","n","n","n","N","N","N","N","N","N","N",													//n	6.749%
-      "o","o","o","o","o","o","o","o","O","O","O","O","O","O","O","O",											//o	7.507%
-      "p","p","P","P",																							//p	1.929%
-      "q","Q",																									//q	0.095%
-      "r","r","r","r","r","r","R","R","R","R","R","R",															//r	5.987%
-      "s","s","s","s","s","s","s","S","S","S","S","S","S","S",													//s	6.327%
-      "t","t","t","t","t","t","t","t","t","t","T","T","T","T","T","T","T","T","T","T",							//t	9.056%
-      "u","u","u","U","U","U",																					//u	2.758%
-      "v","V",																									//v	0.978%
-      "w","w","w","W","W","W",																					//w	2.360%
-      "x","X",																									//x	0.150%
-      "y","y","Y","Y",																							//y	1.974%
-      "z","Z"																										//z	0.074%
+      "a","a","a","a","a","a","a","a","a","A","A","A","A","A","A","A","A","A",                  //a --> 8.167% --> 9x
+      "b","b","B","B",                                              //b --> 1.492% --> 2x
+      "c","c","c","C","C","C",                                          //c 2.782%
+      "d","d","d","d","d","D","D","D","D","D",                                  //d 4.253%
+      "e","e","e","e","e","e","e","e","e","e","e","e","e","E","E","E","E","E","E","E","E","E","E","E","E","E",  //e 12.702%
+      "f","f","f","F","F","F",                                          //f 2.228%
+      "g","g","g","G","G","G",                                          //g 2.015%
+      "h","h","h","h","h","h","h","H","H","H","H","H","H","H",                          //h 6.094%
+      "i","i","i","i","i","i","i","i","i","i","i","i","i","i",                          //i 6.966%
+      "j","J",                                                  //j 0.153%
+      "k","K",                                                  //k 0.772%
+      "l","l","l","l","l","L","L","L","L","L",                                  //l 4.025%
+      "m","m","m","M","M","M",                                          //m 2.406%
+      "n","n","n","n","n","n","n","N","N","N","N","N","N","N",                          //n 6.749%
+      "o","o","o","o","o","o","o","o","O","O","O","O","O","O","O","O",                      //o 7.507%
+      "p","p","P","P",                                              //p 1.929%
+      "q","Q",                                                  //q 0.095%
+      "r","r","r","r","r","r","R","R","R","R","R","R",                              //r 5.987%
+      "s","s","s","s","s","s","s","S","S","S","S","S","S","S",                          //s 6.327%
+      "t","t","t","t","t","t","t","t","t","t","T","T","T","T","T","T","T","T","T","T",              //t 9.056%
+      "u","u","u","U","U","U",                                          //u 2.758%
+      "v","V",                                                  //v 0.978%
+      "w","w","w","W","W","W",                                          //w 2.360%
+      "x","X",                                                  //x 0.150%
+      "y","y","Y","Y",                                              //y 1.974%
+      "z","Z"                                                   //z 0.074%
       );
 
     for ($i=0; $i < 5 ; $i++) {
@@ -149,41 +149,40 @@
 
     function generateColumn($chars = 0){
       global $buchstaben;
-      $wahrscheinlichkeitLink = rand(0,100);
-      $wahrscheinlichkeitMail = rand(0,10);
-      $wahrscheinlichkeitMailRandom = rand(0,2);
       $c = "";
 
 
 
       for ($i=0; $i < $chars; $i++) {
-        //Link zu generieren
-        if ($wahrscheinlichkeitLink == 0) {
+        if (rand(0,100) == 0) {
+
           $linklaenge = rand(5,25);
 
           //Wenn Link, dann Mail oder nicht?
-          if ($wahrscheinlichkeitMail == 0) {
+          if (rand(0,10) == 0) {
             $date = new DateTime();
 
 
             //Wenn Link und Mail dann Radnom Mail oder aus Liste?
-            if ($wahrscheinlichkeitMailRandom == 0) {
-              $link = rand(5,25);
+            if (rand(0,2) == 0) {
+
               $target = $date->getTimestamp();
               $target = $target . "-";
-              for ($k=0; $k < $link; $k++) {
-                $target = $target . $buchstaben[rand(0,225)];
-              }
-              echo '<a href="mailto:'.$target.'@maturaprojekt.ddns.net">'.$target.'@maturaprojekt.ddns.net</a>';
+
+              $target .= generateTarget($linklaenge);
+              $target = str_replace(" ", "-", $target);
+
+              $c .= '<a href="mailto:'.$target.'@maturaprojekt.ddns.net">'.$target.'@maturaprojekt.ddns.net</a>';
             }else{
               $f_contents = file("mailinglist.txt");
               $mail = $date->getTimestamp();
               $mail = $mail . "-";
-                  $mail = $mail . $f_contents[rand(0, count($f_contents) - 1)];
+              $mail = $mail . $f_contents[rand(0, count($f_contents) - 1)];
               //http://www.freedatagenerator.com/csv-data-generator
-              echo '<a href="mailto:'.$mail.'">Send Me A Mail</a>';
+              $c .= '<a href="mailto:'.$mail.'">Send Me A Mail</a>';
             }
           }else{
+
             $generatedLink = '<a href="';
             $target = generateTarget($linklaenge);
             $target = str_replace(" ", "-", $target);
@@ -204,13 +203,13 @@
             }
 
             $generatedLink .= '</a>';
-            $c = $c . $generatedLink;
+            $c .= $generatedLink;
 
             //writeGeneratedLinks($target);
           }
 
         }else {
-          $c = $c . $buchstaben[rand(0,count($buchstaben)-1)];
+          $c .= $buchstaben[rand(0,count($buchstaben)-1)];
         }
       }
 
@@ -240,9 +239,9 @@
 
 
     if(strpos($_SERVER["REQUEST_URI"], 'wp-admin') !== false){
-			header("Location: http://maturaprojekt.ddns.net/wp-login.php");
-			die();
-		}
+      header("Location: http://maturaprojekt.ddns.net/wp-login.php");
+      die();
+    }
 
 
 
@@ -263,6 +262,7 @@
             <div class="col-4">
                 <h3>
                   <?php echo generateHeader(10); ?>
+                  <hr />
                 </h3>
                 <p class="text-content generated-text">
                   <?php echo generateColumn(rand(MINCOLUMNLENGHT,MAXCOLUMNLENGHT)); ?>
@@ -271,6 +271,7 @@
             <div class="col-4">
                 <h3>
                   <?php echo generateHeader(10); ?>
+                  <hr />
                 </h3>
                 <p class="text-content">
                   <?php echo generateColumn(rand(MINCOLUMNLENGHT,MAXCOLUMNLENGHT)); ?>
@@ -279,6 +280,7 @@
             <div class="col-4">
                 <h3>
                   <?php echo generateHeader(10); ?>
+                  <hr />
                 </h3>
                 <p class="text-content">
                   <?php echo generateColumn(rand(MINCOLUMNLENGHT,MAXCOLUMNLENGHT)); ?>
