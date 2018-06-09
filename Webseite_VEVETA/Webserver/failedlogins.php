@@ -64,12 +64,11 @@
       </div>
       <div class="row">
           <div class="col">
-            <table id="failedlogins" class="display">
+            <table id="failedlogins" class="display" style="display: none;">
               <thead>
                 <tr>
                   <th>#</th>
                   <th>IP-Adresse</th>
-                  <th>Datum (Timestamp)</th>
                   <th>Datum</th>
                   <th>Benutzername</th>
                   <th>Passwort</th>
@@ -86,7 +85,6 @@
                     echo "<tr>";
                       echo "<td>".$row["id"]."</td>";
                       echo "<td>".$row["ip"]."</td>";
-                      echo "<td>".$row["datum"]."</td>";
                       echo "<td>".$row["formatiert"]."</td>";
                       echo "<td>".$row["benutzername"]."</td>";
                       echo "<td>".$row["passwort"]."</td>";
@@ -123,7 +121,6 @@
     <script type="text/javascript">
   		$(document).ready(function() {
         $('#failedlogins').DataTable( {
-          "order": [[ 2, "desc" ]],
           "language": {
             "lengthMenu": "_MENU_ Einträge pro Seite",
             "zeroRecords": "Die Suche trifft auf keinen Datensatz zu",
@@ -140,16 +137,11 @@
             }
 
           },
-          "columnDefs": [
-            {
-                "targets": [ 2 ],
-                "visible": false,
-                "searchable": false
-            }
-          ],
+          "pagingType": "full_numbers",
           "fixedHeader": true,
           "responsive": true
         } );
+        $("#failedlogins").show();
   		});
 	   </script>
 </body>
