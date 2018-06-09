@@ -69,6 +69,7 @@
                 <tr>
                   <th>#</th>
                   <th>IP-Adresse</th>
+                  <th>Datum (Timestamp)</th>
                   <th>Datum</th>
                   <th>Benutzername</th>
                   <th>Passwort</th>
@@ -85,6 +86,7 @@
                     echo "<tr>";
                       echo "<td>".$row["id"]."</td>";
                       echo "<td>".$row["ip"]."</td>";
+                      echo "<td>".$row["datum"]."</td>";
                       echo "<td>".$row["formatiert"]."</td>";
                       echo "<td>".$row["benutzername"]."</td>";
                       echo "<td>".$row["passwort"]."</td>";
@@ -103,6 +105,9 @@
       <div class="row">
           <div class="col"><a class="btn btn-primary btn-block back-button" role="button" href="index.php">Zur Startseite</a></div>
       </div>
+  </div>
+  <div id="top-left">
+      <h1 class="title"><a href="index.php" class="home-link">VEVETA<br></a></h1>
   </div>
 
 
@@ -135,6 +140,13 @@
             }
 
           },
+          "columnDefs": [
+            {
+                "targets": [ 2 ],
+                "visible": false,
+                "searchable": false
+            }
+          ],
           "fixedHeader": true,
           "responsive": true
         } );
