@@ -152,7 +152,7 @@
       $c = "";
       $b = "";
       $spaceCounter = 0;
-      $spaceCounterMax = 55;
+      $spaceCounterMax = 50;
 
 
       for ($i=0; $i < $chars; $i++) {
@@ -215,11 +215,11 @@
           if (strcmp($b, " ") == 0) {
             $spaceCounter = 0;
           }else{
-            $spaceCounter++;
+            $spaceCounter .= strlen($b);
           }
 
           if ($spaceCounter>$spaceCounterMax) {
-            $b .= " - ";
+            $b .= " ";
             $spaceCounter = 0;
           }
           $c .= $b;
