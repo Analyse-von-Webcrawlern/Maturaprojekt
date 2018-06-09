@@ -152,7 +152,7 @@
       $c = "";
       $b = "";
       $spaceCounter = 0;
-      $spaceCounterMax = 100;
+      $spaceCounterMax = 55;
 
 
       for ($i=0; $i < $chars; $i++) {
@@ -261,7 +261,7 @@
         </div>
         <div class="row">
             <div class="col-4">
-                <h3>
+                <h3 class="text-center">
                   <?php echo generateHeader(10); ?>
                   <hr />
                 </h3>
@@ -270,7 +270,7 @@
                 </p>
             </div>
             <div class="col-4">
-                <h3>
+                <h3 class="text-center">
                   <?php echo generateHeader(10); ?>
                   <hr />
                 </h3>
@@ -279,7 +279,7 @@
                 </p>
             </div>
             <div class="col-4">
-                <h3>
+                <h3 class="text-center">
                   <?php echo generateHeader(10); ?>
                   <hr />
                 </h3>
