@@ -56,49 +56,54 @@
 </head>
 
 <body>
+  <div class="container container-content">
+      <div class="row">
+          <div class="col-12">
+              <h2 class="text-center subtitle-no-tranform">Anmeldeversuche</h2>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col">
+            <table id="failedlogins" class="display">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>IP-Adresse</th>
+                  <th>Datum</th>
+                  <th>Benutzername</th>
+                  <th>Passwort</th>
+                  <th>Wordpress</th>
+                </tr>
+              </thead>
+              <tbody>
+                <?php
+                  include 'connect-database.php';
 
-
-
-  <table id="failedlogins" class="display">
-    <thead>
-      <tr>
-        <th>IP-Adresse</th>
-        <th>Datum</th>
-        <th>Benutzername</th>
-        <th>Passwort</th>
-        <th>Wordpress</th>
-      </tr>
-    </thead>
-    <tbody>
-      <?php
-        include 'connect-database.php';
-
-        $statement = "SELECT *, DATE_FORMAT(datum, '%a, %d. %b %Y %T') AS formatiert FROM failedlogins";
-        $result = $mysqli->query($statement);
-        while ($row = $result->fetch_assoc()) {
-          echo "<tr>";
-            echo "<td>".$row["ip"]."</td>";
-            echo "<td>".$row["formatiert"]."</td>";
-            echo "<td>".$row["benutzername"]."</td>";
-            echo "<td>".$row["passwort"]."</td>";
-            if ($row["wordpress"] == 1) {
-              echo "<td>JA</td>";
-            }else {
-              echo "<td>NEIN</td>";
-            }
-          echo "</tr>";
-        }
-      ?>
-    </tbody>
-  </table>
-
-
-
-    <div id="top-left">
-        <h1 class="title"><a href="index.html" class="home-php">VEVETA<br></a></h1>
-    </div>
-
-
+                  $statement = "SELECT *, DATE_FORMAT(datum, '%a, %d. %b %Y %T') AS formatiert FROM failedlogins";
+                  $result = $mysqli->query($statement);
+                  while ($row = $result->fetch_assoc()) {
+                    echo "<tr>";
+                      echo "<td>".$row["id"]."</td>";
+                      echo "<td>".$row["ip"]."</td>";
+                      echo "<td>".$row["formatiert"]."</td>";
+                      echo "<td>".$row["benutzername"]."</td>";
+                      echo "<td>".$row["passwort"]."</td>";
+                      if ($row["wordpress"] == 1) {
+                        echo "<td>JA</td>";
+                      }else {
+                        echo "<td>NEIN</td>";
+                      }
+                    echo "</tr>";
+                  }
+                ?>
+              </tbody>
+            </table>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col"><a class="btn btn-primary btn-block back-button" role="button" href="index.php">Zur Startseite</a></div>
+      </div>
+  </div>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

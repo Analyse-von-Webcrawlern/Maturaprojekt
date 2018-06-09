@@ -1,3 +1,4 @@
+<?php  session_start('Maturaprojekt');?>
 <!DOCTYPE html>
 <html class="h-100">
 
@@ -90,7 +91,6 @@
             <button class="btn btn-primary dropdown-toggle login-button" data-toggle="dropdown" aria-expanded="false" type="button" id="menudropdown">Administratorpanel</button>
             <div class="dropdown-menu" role="menu">
                 <?php
-                    session_start('Maturaprojekt');
 
                     if (isset($_SESSION['aktiv'])) {
                         echo '<a class="dropdown-item" role="presentation" href="logout.php"><i class="fa fa-sign-out"></i>&nbsp;Log-Out</a>';
