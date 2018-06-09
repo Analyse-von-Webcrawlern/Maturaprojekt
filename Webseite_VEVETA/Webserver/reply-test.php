@@ -237,7 +237,7 @@
 
 
 
-    <div class="container container-content">
+    <div class="container-fluid container-content">
         <div class="row">
             <div class="col-12">
                 <h2 class="text-center subtitle-no-tranform">
