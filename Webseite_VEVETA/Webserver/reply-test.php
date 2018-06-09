@@ -207,7 +207,7 @@
             $generatedLink .= ' </a> ';
             $c .= $generatedLink;
 
-            writeGeneratedLinks($target);
+            //  writeGeneratedLinks($target);
           }
 
         }else {
