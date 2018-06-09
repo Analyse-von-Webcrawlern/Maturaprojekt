@@ -118,7 +118,7 @@
     <script type="text/javascript">
   		$(document).ready(function() {
         $('#failedlogins').DataTable( {
-          "order": [[ 1, "desc" ]],
+          "order": [[ 2, "desc" ]],
           "language": {
             "lengthMenu": "_MENU_ Einträge pro Seite",
             "zeroRecords": "Die Suche trifft auf keinen Datensatz zu",
