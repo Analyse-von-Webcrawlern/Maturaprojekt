@@ -381,4 +381,5 @@ btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dro
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #212529;
 }
