@@ -207,13 +207,12 @@
             $generatedLink .= ' </a> ';
             $c .= $generatedLink;
 
-            //writeGeneratedLinks($target);
+            writeGeneratedLinks($target);
           }
 
         }else {
           $b = $buchstaben[rand(0,count($buchstaben)-1)];
-          if ($b == " " OR $b == "-") {
-            //$c .= "SECKL";
+          if (strcmp($b, " ") == 0) {
             $spaceCounter = 0;
           }else{
             $spaceCounter++;
@@ -262,7 +261,7 @@
         <div class="row">
             <div class="col-4">
                 <h3 class="text-center">
-                  <?php echo generateHeader(55); ?>
+                  <?php echo generateHeader(35); ?>
                   <hr />
                 </h3>
                 <p class="text-content text-justify">
@@ -271,7 +270,7 @@
             </div>
             <div class="col-4">
                 <h3 class="text-center">
-                  <?php echo generateHeader(55); ?>
+                  <?php echo generateHeader(35); ?>
                   <hr />
                 </h3>
                 <p class="text-content text-justify">
@@ -280,7 +279,7 @@
             </div>
             <div class="col-4">
                 <h3 class="text-center">
-                  <?php echo generateHeader(55); ?>
+                  <?php echo generateHeader(35); ?>
                   <hr />
                 </h3>
                 <p class="text-content text-justify">
