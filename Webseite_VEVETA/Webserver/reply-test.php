@@ -251,7 +251,7 @@
                   <?php echo generateHeader(10); ?>
                   <hr />
                 </h3>
-                <p class="text-content generated-text text-justify">
+                <p class="text-content generated-text">
                   <?php echo generateColumn(rand(MINCOLUMNLENGHT,MAXCOLUMNLENGHT)); ?>
                 </p>
             </div>
@@ -260,7 +260,7 @@
                   <?php echo generateHeader(10); ?>
                   <hr />
                 </h3>
-                <p class="text-content text-justify">
+                <p class="text-content">
                   <?php echo generateColumn(rand(MINCOLUMNLENGHT,MAXCOLUMNLENGHT)); ?>
                 </p>
             </div>
@@ -269,7 +269,7 @@
                   <?php echo generateHeader(10); ?>
                   <hr />
                 </h3>
-                <p class="text-content text-justify">
+                <p class="text-content">
                   <?php echo generateColumn(rand(MINCOLUMNLENGHT,MAXCOLUMNLENGHT)); ?>
                 </p>
             </div>
