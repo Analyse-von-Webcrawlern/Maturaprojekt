@@ -150,7 +150,9 @@
     function generateColumn($chars = 0){
       global $buchstaben;
       $c = "";
-
+      $b = "";
+      $spaceCounter = 0;
+      $spaceCounterMax = 100;
 
 
       for ($i=0; $i < $chars; $i++) {
@@ -209,7 +211,19 @@
           }
 
         }else {
-          $c .= $buchstaben[rand(0,count($buchstaben)-1)];
+          $b = $buchstaben[rand(0,count($buchstaben)-1)];
+          if ($b == " " OR $b == "-") {
+            //$c .= "SECKL";
+            $spaceCounter = 0;
+          }else{
+            $spaceCounter++;
+          }
+
+          if ($spaceCounter>$spaceCounterMax) {
+            $b .= " ";
+            $spaceCounter = 0;
+          }
+          $c .= $b;
         }
       }
 
