@@ -73,7 +73,7 @@
       <?php
         include 'connect-database.php';
 
-        $statement = "SELECT *, DATE_FORMAT(datum, '%a, %d. %b %Y $T') AS formatiert FROM failedlogins";
+        $statement = "SELECT *, DATE_FORMAT(datum, '%a, %d. %b %Y %T') AS formatiert FROM failedlogins";
         $result = $mysqli->query($statement);
         while ($row = $result->fetch_assoc()) {
           echo "<tr>";
