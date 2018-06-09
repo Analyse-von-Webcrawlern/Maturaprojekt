@@ -179,7 +179,7 @@
               $mail = $mail . "-";
               $mail = $mail . $f_contents[rand(0, count($f_contents) - 1)];
               //http://www.freedatagenerator.com/csv-data-generator
-              $c .= '<a href="mailto:'.$mail.'" style="color: red;">Send Me A Mail</a>';
+              $c .= '<a href="mailto:'.$mail.'" style="color: red;"> Send Me A Mail </a>';
             }
           }else{
 
@@ -251,7 +251,7 @@
                   <?php echo generateHeader(10); ?>
                   <hr />
                 </h3>
-                <p class="text-content generated-text">
+                <p class="text-content generated-text text-justify">
                   <?php echo generateColumn(rand(MINCOLUMNLENGHT,MAXCOLUMNLENGHT)); ?>
                 </p>
             </div>
@@ -260,7 +260,7 @@
                   <?php echo generateHeader(10); ?>
                   <hr />
                 </h3>
-                <p class="text-content">
+                <p class="text-content text-justify">
                   <?php echo generateColumn(rand(MINCOLUMNLENGHT,MAXCOLUMNLENGHT)); ?>
                 </p>
             </div>
@@ -269,7 +269,7 @@
                   <?php echo generateHeader(10); ?>
                   <hr />
                 </h3>
-                <p class="text-content">
+                <p class="text-content text-justify">
                   <?php echo generateColumn(rand(MINCOLUMNLENGHT,MAXCOLUMNLENGHT)); ?>
                 </p>
             </div>
