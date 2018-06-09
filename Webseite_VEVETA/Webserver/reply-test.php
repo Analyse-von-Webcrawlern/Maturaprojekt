@@ -109,13 +109,6 @@
     for ($i=0; $i < 50 ; $i++) {
       $buchstaben[] = " ";
     }
-
-    if (isset($buchstabe)) {
-      echo "jo";
-    }else {
-      echo "na";
-    }
-
     flush();
 
 
@@ -145,12 +138,13 @@
     }*/
 
     function generateHeader($chars = 0){
-      $header = "";
+      global $buchstaben;
+      $h = "";
       for ($i=0; $i < $chars; $i++) {
-        $header = $header . $buchstaben[rand(0,count($buchstaben)-1)];
+        $h = $h . $buchstaben[rand(0,count($buchstaben)-1)];
       }
 
-      return $header;
+      return $h;
     }
 
 
@@ -184,25 +178,25 @@
                 <h3>
                   <?php echo generateHeader(10); ?>
                 </h3>
-                <p class="text-content generated-text"><br>Diese Webseite ist Bestandteil meines Maturaprojektes, welches ich für die Matura 2017/18 entwickelt habe.&nbsp;<br>Mein Maturaprojekt beschäftigt sich mit der Beobachtung und Analyse von Webcrawlern und die Erkennung/Beweis von bekannten
-                    Angriffsschemas.&nbsp;<br>Um diese Angriffsschemas zu erforschen habe ich eine Teergrube entwickelt, welche Teil dieser Webseite ist. Im Demo-Bereich können Websurfer auf die Tarpit zugreifen.&nbsp;<br>Zu den bekannten Angriffsmustern
-                    gehören:<br><br></p>
+                <p class="text-content generated-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
             </div>
             <div class="col-4">
                 <h3>
                   <?php echo generateHeader(10); ?>
                 </h3>
-                <p class="text-content"><br>Diese Webseite ist Bestandteil meines Maturaprojektes, welches ich für die Matura 2017/18 entwickelt habe.&nbsp;<br>Mein Maturaprojekt beschäftigt sich mit der Beobachtung und Analyse von Webcrawlern und die Erkennung/Beweis von bekannten
-                    Angriffsschemas.&nbsp;<br>Um diese Angriffsschemas zu erforschen habe ich eine Teergrube entwickelt, welche Teil dieser Webseite ist. Im Demo-Bereich können Websurfer auf die Tarpit zugreifen.&nbsp;<br>Zu den bekannten Angriffsmustern
-                    gehören:<br><br></p>
+                <p class="text-content">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
             </div>
             <div class="col-4">
                 <h3>
                   <?php echo generateHeader(10); ?>
                 </h3>
-                <p class="text-content"><br>Diese Webseite ist Bestandteil meines Maturaprojektes, welches ich für die Matura 2017/18 entwickelt habe.&nbsp;<br>Mein Maturaprojekt beschäftigt sich mit der Beobachtung und Analyse von Webcrawlern und die Erkennung/Beweis von bekannten
-                    Angriffsschemas.&nbsp;<br>Um diese Angriffsschemas zu erforschen habe ich eine Teergrube entwickelt, welche Teil dieser Webseite ist. Im Demo-Bereich können Websurfer auf die Tarpit zugreifen.&nbsp;<br>Zu den bekannten Angriffsmustern
-                    gehören:<br><br></p>
+                <p class="text-content">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
             </div>
         </div>
         <div class="row">
