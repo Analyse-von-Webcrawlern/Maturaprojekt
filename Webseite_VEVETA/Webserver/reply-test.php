@@ -220,7 +220,7 @@
           }
 
           if ($spaceCounter>$spaceCounterMax) {
-            $b .= " ";
+            $b .= " - ";
             $spaceCounter = 0;
           }
           $c .= $b;
@@ -255,14 +255,14 @@
         <div class="row">
             <div class="col-12">
                 <h2 class="text-center subtitle-no-tranform">
-                  <?php echo generateHeader(20); ?>
+                  <?php echo generateHeader(25); ?>
                 </h2>
             </div>
         </div>
         <div class="row">
             <div class="col-4">
                 <h3 class="text-center">
-                  <?php echo generateHeader(10); ?>
+                  <?php echo generateHeader(55); ?>
                   <hr />
                 </h3>
                 <p class="text-content text-justify">
@@ -271,7 +271,7 @@
             </div>
             <div class="col-4">
                 <h3 class="text-center">
-                  <?php echo generateHeader(10); ?>
+                  <?php echo generateHeader(55); ?>
                   <hr />
                 </h3>
                 <p class="text-content text-justify">
@@ -280,7 +280,7 @@
             </div>
             <div class="col-4">
                 <h3 class="text-center">
-                  <?php echo generateHeader(10); ?>
+                  <?php echo generateHeader(55); ?>
                   <hr />
                 </h3>
                 <p class="text-content text-justify">
