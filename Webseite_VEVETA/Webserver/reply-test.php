@@ -172,18 +172,18 @@
               $target .= generateTarget($linklaenge);
               $target = str_replace(" ", "-", $target);
 
-              $c .= '<a href="mailto:'.$target.'@maturaprojekt.ddns.net"> '.$target.'@maturaprojekt.ddns.net </a>';
+              $c .= ' <a href="mailto:'.$target.'@maturaprojekt.ddns.net"> '.$target.'@maturaprojekt.ddns.net </a> ';
             }else{
               $f_contents = file("mailinglist.txt");
               $mail = $date->getTimestamp();
               $mail = $mail . "-";
               $mail = $mail . $f_contents[rand(0, count($f_contents) - 1)];
               //http://www.freedatagenerator.com/csv-data-generator
-              $c .= '<a href="mailto:'.$mail.'" style="color: red;"> Send Me A Mail </a>';
+              $c .= ' <a href="mailto:'.$mail.'" style="color: red;"> Send Me A Mail </a> ';
             }
           }else{
 
-            $generatedLink = '<a href="';
+            $generatedLink = ' <a href="';
             $target = generateTarget($linklaenge);
             $target = str_replace(" ", "-", $target);
 
