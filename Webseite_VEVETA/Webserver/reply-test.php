@@ -149,12 +149,88 @@
 
     function generateColumn($chars = 0){
       global $buchstaben;
-      $c = $chars;
+      $wahrscheinlichkeitLink = rand(0,100);
+      $wahrscheinlichkeitMail = rand(0,10);
+      $wahrscheinlichkeitMailRandom = rand(0,2);
+      $c = "";
+
+
+
+      for ($i=0; $i < $chars; $i++) {
+        //Link zu generieren
+        if ($wahrscheinlichkeitLink == 0) {
+          $linklaenge = rand(5,25);
+
+          //Wenn Link, dann Mail oder nicht?
+          if ($wahrscheinlichkeitMail == 0) {
+            $date = new DateTime();
+
+
+            //Wenn Link und Mail dann Radnom Mail oder aus Liste?
+            if ($wahrscheinlichkeitMailRandom == 0) {
+              $link = rand(5,25);
+              $target = $date->getTimestamp();
+              $target = $target . "-";
+              for ($k=0; $k < $link; $k++) {
+                $target = $target . $buchstaben[rand(0,225)];
+              }
+              echo '<a href="mailto:'.$target.'@maturaprojekt.ddns.net">'.$target.'@maturaprojekt.ddns.net</a>';
+            }else{
+              $f_contents = file("mailinglist.txt");
+              $mail = $date->getTimestamp();
+              $mail = $mail . "-";
+                  $mail = $mail . $f_contents[rand(0, count($f_contents) - 1)];
+              //http://www.freedatagenerator.com/csv-data-generator
+              echo '<a href="mailto:'.$mail.'">Send Me A Mail</a>';
+            }
+          }else{
+            $generatedLink = '<a href="';
+            $target = generateTarget($linklaenge);
+            $target = str_replace(" ", "-", $target);
+
+            $ending = rand(0,4);
+            if ($ending == 0) {
+              $target .= '.htm">';
+            }elseif ($ending == 1) {
+              $target .= '.php">';
+            }else{
+              $target .= '.html">';
+            }
+
+            $generatedLink .= $target;
+
+            for ($j=0; $j < $linklaenge; $j++) {
+              $generatedLink .= $buchstaben[rand(0,count($buchstaben)-1)];
+            }
+
+            $generatedLink .= '</a>';
+            $c = $c . $generatedLink;
+
+            //writeGeneratedLinks($target);
+          }
+
+        }else {
+          $c = $c . $buchstaben[rand(0,count($buchstaben)-1)];
+        }
+      }
 
 
 
 
       return $c;
+    }
+
+
+
+
+    function generateTarget($linklaenge = 0){
+      global $buchstaben;
+      $t = "";
+      for ($i=0; $i < $linklaenge; $i++) {
+        t = t . $buchstaben[rand(0,count($buchstaben)-1)];
+      }
+
+      return $t;
     }
 
 
