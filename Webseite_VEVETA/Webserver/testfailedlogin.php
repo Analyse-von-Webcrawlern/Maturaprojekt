@@ -80,7 +80,7 @@
             echo "<td>".$row["datum"]."</td>";
             echo "<td>".$row["benutzername"]."</td>";
             echo "<td>".$row["passwort"]."</td>";
-            if ($row["ip"] == "1") {
+            if (strcmp($row["wordpress"],"1") == 1) {
               echo "<td>JA</td>";
             }else {
               echo "<td>NEIN</td>";
@@ -94,7 +94,7 @@
 
 
     <div id="top-left">
-        <h1 class="title"><a href="index.html" class="home-link">VEVETA<br></a></h1>
+        <h1 class="title"><a href="index.php" class="home-link">VEVETA<br></a></h1>
     </div>
 
 
