@@ -166,6 +166,9 @@
         <div class="row">
             <div class="col"><a class="btn btn-primary btn-block back-button" role="button" href="index.php">Zur Startseite</a></div>
         </div>
+        <div id="outer-maxi-spinner">
+        	<div id="maxi-spinner" style="display: none;"><i class="fa fa-refresh fa-spin"></i></div>
+        </div>
     </div>
     <div id="top-left">
         <h1 class="title"><a href="index.php" class="home-link">VEVETA<br></a></h1>
