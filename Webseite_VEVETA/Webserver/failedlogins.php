@@ -58,7 +58,7 @@
 
 
 
-  <table id="failedlogins" class="table table-responsive table-striped table-bordered">
+  <table id="failedlogins" class="display">
     <thead>
       <tr>
         <th>IP-Adresse</th>
@@ -80,7 +80,7 @@
             echo "<td>".$row["datum"]."</td>";
             echo "<td>".$row["benutzername"]."</td>";
             echo "<td>".$row["passwort"]."</td>";
-            if (strcmp($row["wordpress"], "1") == 1) {
+            if ($row["wordpress"] == 1) {
               echo "<td>JA</td>";
             }else {
               echo "<td>NEIN</td>";
