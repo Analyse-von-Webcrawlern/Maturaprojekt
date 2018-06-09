@@ -227,7 +227,7 @@
       global $buchstaben;
       $t = "";
       for ($i=0; $i < $linklaenge; $i++) {
-        t = t . $buchstaben[rand(0,count($buchstaben)-1)];
+        $t = $t . $buchstaben[rand(0,count($buchstaben)-1)];
       }
 
       return $t;
