@@ -36,7 +36,8 @@
   <link rel="stylesheet" href="assets/css/Timeline.css">
 
 
-  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.16/fh-3.1.3/r-2.2.1/datatables.css"/>
+
 
   <!--Google Analytics-->
   <script>
@@ -72,12 +73,12 @@
       <?php
         include 'connect-database.php';
 
-        $statement = "SELECT * FROM failedlogins";
+        $statement = "SELECT *, DATE_FORMAT(datum, '%a, $d. %b %Y $T') AS formatiert FROM failedlogins";
         $result = $mysqli->query($statement);
         while ($row = $result->fetch_assoc()) {
           echo "<tr>";
             echo "<td>".$row["ip"]."</td>";
-            echo "<td>".$row["datum"]."</td>";
+            echo "<td>".$row["formatiert"]."</td>";
             echo "<td>".$row["benutzername"]."</td>";
             echo "<td>".$row["passwort"]."</td>";
             if ($row["wordpress"] == 1) {
@@ -107,7 +108,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
 
 
-    <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.16/fh-3.1.3/r-2.2.1/datatables.js"></script>
 
     <script type="text/javascript">
   		$(document).ready(function() {
@@ -118,8 +119,44 @@
             "zeroRecords": "Die Suche trifft auf keinen Datensatz zu",
             "info": "Seite _PAGE_ von _PAGES_",
             "infoEmpty": "Keine Datensätze vorhanden",
-            "infoFiltered": "(von _MAX_ Datensätzen herausgefiltert)"
+            "infoFiltered": "(von _MAX_ Datensätzen herausgefiltert)",
+            "search": "Volltextsuche:&nbsp;",
+            "loadingRecords": "Durchsuche Datensätze...",
+            "paginate": {
+                "first":      "Erste Seite",
+                "previous":   "Letzte Seite",
+                "next":       "Nächste Seite",
+                "last":       "Vorherige Seite"
+            }
+
+          },
+
+          language: {
+        processing:     "Traitement en cours...",
+        search:         "Rechercher&nbsp;:",
+        lengthMenu:    "Afficher _MENU_ &eacute;l&eacute;ments",
+        info:           "Affichage de l'&eacute;lement _START_ &agrave; _END_ sur _TOTAL_ &eacute;l&eacute;ments",
+        infoEmpty:      "Affichage de l'&eacute;lement 0 &agrave; 0 sur 0 &eacute;l&eacute;ments",
+        infoFiltered:   "(filtr&eacute; de _MAX_ &eacute;l&eacute;ments au total)",
+        infoPostFix:    "",
+        loadingRecords: "Chargement en cours...",
+        zeroRecords:    "Aucun &eacute;l&eacute;ment &agrave; afficher",
+        emptyTable:     "Aucune donnée disponible dans le tableau",
+        paginate: {
+            first:      "Premier",
+            previous:   "Pr&eacute;c&eacute;dent",
+            next:       "Suivant",
+            last:       "Dernier"
+        },
+        aria: {
+            sortAscending:  ": activer pour trier la colonne par ordre croissant",
+            sortDescending: ": activer pour trier la colonne par ordre décroissant"
         }
+    }
+
+
+          "fixedHeader": true,
+          "responsive": true
         } );
         //$('#failedlogins').css("display","block");
   		});
