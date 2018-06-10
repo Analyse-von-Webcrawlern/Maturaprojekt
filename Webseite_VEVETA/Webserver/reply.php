@@ -174,7 +174,7 @@
               $target .= generateTarget($linklaenge);
               $target = str_replace(" ", "-", $target);
 
-              $c .= ' <a href="mailto:'.$target.'@maturaprojekt.ddns.net"> '.$target.'@maturaprojekt.ddns.net </a> ';
+              $c .= ' <a href="mailto:'.$target.'@maturaprojekt.ddns.net" style="color: green;"> '.$target.'@maturaprojekt.ddns.net </a> ';
             }else{
               $f_contents = file("mailinglist.txt");
               $mail = $date->getTimestamp();
