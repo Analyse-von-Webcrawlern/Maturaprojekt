@@ -112,7 +112,7 @@
     <!-- ################################################## -->
     <!-- VEVETA + Homelink -->
     <div id="top-left">
-        <h1 id="landing-page" class="title"><a href="index.html" class="home-link">VEVETA<br></a></h1>
+        <h1 id="landing-page" class="title"><a href="index.php" class="home-link">VEVETA<br></a></h1>
     </div>
     <!-- ENDE VEVETA + Homelink -->
     <!-- ################################################## -->
