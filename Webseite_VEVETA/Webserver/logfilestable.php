@@ -94,9 +94,9 @@
                       echo "<td>".$row["IP"]."</td>";
                       echo "<td>".$row["datum"]."</td>";
                       echo "<td>".$row["methode"]."</td>";
-                      echo "<td>".$row["passwort"]."</td>";
                       echo "<td>".$row["url"]."</td>";
                       echo "<td>".$row["protokoll"]."</td>";
+                      echo "<td>".$row["status"]."</td>";
                       echo "<td>".$row["gesendete_bytes"]."</td>";
                       echo "<td>".$row["referring_url"]."</td>";
                       echo "<td>".$row["useragent"]."</td>";
