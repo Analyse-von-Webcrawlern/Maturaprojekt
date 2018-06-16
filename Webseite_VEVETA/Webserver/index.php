@@ -100,7 +100,7 @@
                         echo '<a class="dropdown-item" role="presentation" href="failedlogins.php">Anmeldeversuche</a>';
                         echo '<a class="dropdown-item" role="presentation" href="http://maturaprojekt.ddns.net/robots.txt">robots.txt</a>';
                         echo '<a class="dropdown-item" role="presentation" href="/phpmyadmin/">phpMyAdmin</a>';
-                        echo '<a class="dropdown-item" role="presentation" href="/webmail/">Webmail powered by RainLoop</a>';
+                        echo '<a class="dropdown-item" role="presentation" href="/webmail/">Webmail</a>';
                     }else{
                         echo '<a class="dropdown-item" role="presentation" href="login.html"><i class="fa fa-sign-in"></i>&nbsp;Log-In</a>';
                     }
