@@ -114,7 +114,7 @@
   </div>
   <div id="top-left">
       <h1 class="title"><a href="index.php" class="home-link">VEVETA<br></a></h1>
-  </div> 
+  </div>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
